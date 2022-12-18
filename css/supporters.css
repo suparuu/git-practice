@@ -1,0 +1,166 @@
+@import url("./common.css");
+@import url(./font.css);
+* {
+  letter-spacing: -0.5px;
+  font-weight: 500px;
+}
+
+.main01 {
+  width: 100%;
+  background-color: #dddddd;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/Supporters_img/section01_img.jpg);
+  height: 1080px;
+}
+
+.main02 {
+  background-color: #d1ceb3;
+  width: 100%;
+  height: 488px;
+}
+.main02 .container02 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 25px;
+  height: 100%;
+}
+.main02 .container02 .flexbox01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.main02 .container02 .flexbox01 .flexbox02 {
+  display: flex;
+  flex-direction: column;
+}
+.main02 .container02 .flexbox01 .flexbox02 .textbox04 p {
+  font-size: 30px;
+  line-height: 1.2;
+}
+.main02 .container02 .flexbox01 .flexbox02 .textbox04 p span {
+  font-size: 30px;
+  font-weight: bold;
+}
+.main02 .container02 .flexbox01 .flexbox02 .textbox05 {
+  margin: 0 auto;
+}
+.main02 .container02 .flexbox01 .imgbox01 {
+  display: flex;
+  align-items: center;
+}
+.main02 .container02 .flexbox01 .imgbox01 .ani01 {
+  width: 458px;
+  padding: 20px;
+}
+.main02 .container02 .flexbox01 .imgbox01 .ani01 img {
+  width: 100%;
+  padding: 20px;
+}
+
+.main03 {
+  width: 100%;
+  height: 316px;
+  background-color: #f9f2ea;
+}
+.main03 .container03 {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.main03 .container03 p:nth-of-type(1) {
+  width: 50%;
+  font-size: 30px;
+  line-height: 2;
+}
+.main03 .container03 p:nth-of-type(2) {
+  letter-spacing: -1px;
+  line-height: 2;
+}
+
+.main04 {
+  position: relative;
+  height: 1150px;
+  width: 100%;
+  background-color: #f9f2ea;
+}
+.main04 .line01 {
+  position: relative;
+  border: 0.1px solid #000;
+  width: 1200px;
+  margin: 0 auto 80px auto;
+}
+.main04 .container04 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main04 .flexbox03 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main04 .flexbox03 p {
+  width: 50%;
+  height: 380px;
+}
+.main04 .flexbox03 p span:nth-of-type(2) {
+  font-size: 36px;
+}
+.main04 .flexbox03 p span:nth-of-type(3) {
+  font-size: 36px;
+}
+.main04 .flexbox03 p span:nth-of-type(4) {
+  line-height: 2;
+}
+.main04 .flexbox03 p span:nth-of-type(5) {
+  line-height: 2;
+}
+.main04 .imgbox02 {
+  width: 50%;
+}
+.main04 .imgbox02 img {
+  height: 380px;
+}
+.main04 .flexbox04 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-top: 50px;
+}
+.main04 .flexbox04 p {
+  width: 50%;
+}
+.main04 .flexbox04 p span:nth-of-type(1) {
+  font-size: 22px;
+}
+.main04 .flexbox04 p span:nth-of-type(2) {
+  font-size: 16px;
+}
+.main04 .flexbox04 p span:nth-of-type(3) {
+  font-size: 16px;
+}
+.main04 .flexbox04 p span:nth-of-type(4) {
+  font-size: 16px;
+}
+.main04 .flexbox04 .imgbox03 {
+  width: 50%;
+  display: flex;
+}
+.main04 .flexbox04 .imgbox03 img {
+  height: 436px;
+}
+
+.main05 {
+  height: 974px;
+  background-color: #f9f2ea;
+}
+.main05 .line02 {
+  position: relative;
+  border: 1px solid #000;
+  width: 1200px;
+  margin: 0 auto 80px auto;
+}/*# sourceMappingURL=supporters.css.map */
