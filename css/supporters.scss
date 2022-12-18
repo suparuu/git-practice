@@ -100,14 +100,13 @@
 
 .main04 {
   position: relative;
-  height: 1150px;
   width: 100%;
   background-color: #f9f2ea;
+
   .line01 {
-    position: relative;
-    border: 0.1px solid #000;
+    border: solid 1px #000;
     width: 1200px;
-    margin: 0 auto 80px auto;
+    margin: 0 auto;
   }
 
   .container04 {
@@ -119,6 +118,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 80px;
 
     p {
       width: 50%;
@@ -147,6 +147,7 @@
 
     img {
       height: 380px;
+      width: 100%;
     }
   }
 
@@ -155,7 +156,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
-    padding-top: 50px;
+    padding: 80px 0;
 
     p {
       width: 50%;
@@ -183,12 +184,100 @@
   }
 }
 .main05 {
-  height: 974px;
+  width: 100%;
   background-color: #f9f2ea;
+  margin: 0 auto;
   .line02 {
-    position: relative;
-    border: 1px solid #000;
+    border: solid 1px #000;
     width: 1200px;
-    margin: 0 auto 80px auto;
+    margin: 0 auto;
+  }
+  .flexbox05 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 80px 0;
+    .flexbox06 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 545px;
+        p:nth-of-type(1) {
+        span:nth-of-type(2) {
+          font-size: 36px;
+        }
+        span:nth-of-type(3) {
+          font-size: 36px;
+        }
+        span:nth-of-type(4) {
+          font-size: 36px;
+        }
+      }
+    }
+    .imgbox04 {
+      height: auto;
+      img {
+        width: 458px;
+        height: 545px;
+      }
+    }
+  }
+  .flexbox08{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 80px;
+    .textbox07{
+        line-height: 2;
+    }
   }
 }
+.main06 {
+    height: 974px;
+    width: 100%;
+    background-color: #f9f2ea;
+    margin: 0 auto;
+    .line03{
+      border: solid 1px #000;
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .flexbox09 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 80px 0;
+      .textbox08 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 545px;
+      }
+      .imgbox06 {
+        height: auto;
+        img {
+          width: 458px;
+          height: 545px;
+        }
+      }
+
+    }
+    .dots{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        span{
+            border: solid 3px #fff;
+            border-radius: 30px;
+
+        }
+    }
+
+  }
