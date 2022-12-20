@@ -29,7 +29,7 @@
         </ul>
     </article>
     <script>
-        
+
         //display:none == hide(), display:block == show()
         $('.faq div').hide();
         $('.faq li').click(function () {
@@ -63,27 +63,15 @@
         let num = 0, fadeInterval;
 
         fadeInterval = setInterval(function () {
-            if (num < 2) {
-                $('.fade img').eq(num).fadeOut(1000);
-                num++;
-                $('.fade img').eq(num).fadeIn(1000);
+            $('.fade img').eq(num).fadeOut(1000);
+            if (num == 2) {
+                num = 0
             }
             else {
-                num = -1
+                num++;
             }
-            /*        if(num==2){
-                       num=0;
-                   }
-                   else{
-                       num++;
-                   } */
-            /*  for(num=0;num<3;num++){
-             $('.fade img').eq(num).fadeOut(1000);
-             $('.fade img').eq(num).fadeIn(1000); }*/
 
-
-
-
+            $('.fade img').eq(num).fadeIn(1000);
         }, 2000)
 
 
@@ -124,17 +112,17 @@
         let option = { to: ".effect h2", className: "ui-effects-transfer" };
         $('.effect > div').effect('transfer', option, 500);
 
-        $('.effect div').animate({marginLeft: 200}, 1000, 'easeOutBounce')
-        .animate({marginLeft: 00}, 1000, 'easeOutBounce')
-        .animate({marginLeft: 200}, 1000, 'easeOutBounce')
-        .animate({marginLeft: 00}, 1000, 'easeOutBounce')
-        .animate({marginLeft: 400}, 1000, 'easeOutBounce')
-        .animate({marginLeft: 00}, 1000, 'easeOutBounce')
-        .animate({marginLeft: 600}, 1000, 'easeOutBounce')
-        .animate({marginLeft: 00}, 1000, 'easeOutBounce')
-        .animate({marginLeft: 800}, 1000, 'easeOutBounce')
-        .animate({marginLeft: 00}, 1000, 'easeOutBounce')
-        .animate({marginLeft: 1000}, 1000, 'easeOutBounce')
+        $('.effect div').animate({ marginLeft: 200 }, 1000, 'easeOutBounce')
+            .animate({ marginLeft: 00 }, 1000, 'easeOutBounce')
+            .animate({ marginLeft: 200 }, 1000, 'easeOutBounce')
+            .animate({ marginLeft: 00 }, 1000, 'easeOutBounce')
+            .animate({ marginLeft: 400 }, 1000, 'easeOutBounce')
+            .animate({ marginLeft: 00 }, 1000, 'easeOutBounce')
+            .animate({ marginLeft: 600 }, 1000, 'easeOutBounce')
+            .animate({ marginLeft: 00 }, 1000, 'easeOutBounce')
+            .animate({ marginLeft: 800 }, 1000, 'easeOutBounce')
+            .animate({ marginLeft: 00 }, 1000, 'easeOutBounce')
+            .animate({ marginLeft: 1000 }, 1000, 'easeOutBounce')
 
         //slideToggle, slideDown, slidUp
         //fadeIn, fadeOut, fadeToggle

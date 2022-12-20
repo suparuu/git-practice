@@ -1,6 +1,19 @@
 @import url("./common.css");
 @import url("./font.css");
 
+@keyframes ani01 {
+  //아래에서 위로 가는 애니메이션
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 * {
   letter-spacing: -0.5px;
   font-weight: 500px;
@@ -18,7 +31,6 @@
     // position: relative;
     background-color: #d1ceb3;
     width: 100%;
-    padding: 110px 0;
 
     .container02 {
       max-width: 1200px;
@@ -54,6 +66,9 @@
           position: relative;
           height: 500px;
           width: 40%;
+          &.on {
+            animation: ani01 1.5s;
+          }
 
           div {
             width: 458px;
@@ -84,6 +99,9 @@
       margin: 0 auto;
       display: flex;
       align-items: center;
+      &.on {
+        animation: ani01 1.5s;
+      }
       p:nth-of-type(1) {
         width: 50%;
         font-size: 30px;
@@ -119,6 +137,9 @@
       justify-content: space-between;
       align-items: center;
       margin-top: 80px;
+      &.on {
+        animation: ani01 1.5s;
+      }
 
       p {
         width: 50%;
@@ -160,6 +181,9 @@
       align-items: center;
       flex-direction: row-reverse;
       padding: 80px 0;
+      &.on {
+        animation: ani01 1.5s;
+      }
 
       p {
         width: 50%;
@@ -202,6 +226,9 @@
       margin: 0 auto;
       max-width: 1200px;
       padding: 80px 0;
+      &.on {
+        animation: ani01 1.5s;
+      }
       .flexbox06 {
         display: flex;
         flex-direction: column;
@@ -240,6 +267,9 @@
       margin: 0 auto;
       align-items: center;
       padding-bottom: 80px;
+      &.on {
+        animation: ani01 1.5s;
+      }
       .textbox07 {
         line-height: 2;
       }
@@ -321,6 +351,9 @@
       max-width: 1200px;
       padding-top: 80px;
       margin: 0 auto;
+      &.on {
+        animation: ani01 1.5s;
+      }
       .textbox09 {
         width: 50%;
         display: flex;

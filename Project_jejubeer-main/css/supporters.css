@@ -1,5 +1,25 @@
 @import url("./common.css");
 @import url("./font.css");
+@-webkit-keyframes ani01 {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes ani01 {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 * {
   letter-spacing: -0.5px;
   font-weight: 500px;
@@ -16,7 +36,6 @@
 * .main02 {
   background-color: #d1ceb3;
   width: 100%;
-  padding: 110px 0;
 }
 * .main02 .container02 {
   max-width: 1200px;
@@ -51,6 +70,10 @@
   height: 500px;
   width: 40%;
 }
+* .main02 .container02 .flexbox01 .imgbox01.on {
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
+}
 * .main02 .container02 .flexbox01 .imgbox01 div {
   width: 458px;
   padding: 20px;
@@ -73,6 +96,10 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
+}
+* .main03 .container03.on {
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
 }
 * .main03 .container03 p:nth-of-type(1) {
   width: 50%;
@@ -103,6 +130,10 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 80px;
+}
+* .main04 .flexbox03.on {
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
 }
 * .main04 .flexbox03 p {
   width: 50%;
@@ -138,6 +169,10 @@
   align-items: center;
   flex-direction: row-reverse;
   padding: 80px 0;
+}
+* .main04 .flexbox04.on {
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
 }
 * .main04 .flexbox04 p {
   width: 50%;
@@ -179,6 +214,10 @@
   max-width: 1200px;
   padding: 80px 0;
 }
+* .main05 .flexbox05.on {
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
+}
 * .main05 .flexbox05 .flexbox06 {
   display: flex;
   flex-direction: column;
@@ -212,6 +251,10 @@
   margin: 0 auto;
   align-items: center;
   padding-bottom: 80px;
+}
+* .main05 .flexbox08.on {
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
 }
 * .main05 .flexbox08 .textbox07 {
   line-height: 2;
@@ -288,6 +331,10 @@
   max-width: 1200px;
   padding-top: 80px;
   margin: 0 auto;
+}
+* .main07 .flexbox07.on {
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
 }
 * .main07 .flexbox07 .textbox09 {
   width: 50%;
