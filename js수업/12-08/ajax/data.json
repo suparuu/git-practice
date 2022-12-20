@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "id": "0",
+      "url": "./img/img01.jpg",
+      "title": "이미지 01",
+      "detail": "asdfasdf..01"
+    },
+    {
+      "id": "1",
+      "url": "./img/img02.jpg",
+      "title": "이미지 02",
+      "detail": "asdfasdf..02"
+    },
+    {
+      "id": "2",
+      "url": "./img/img03.jpg",
+      "title": "이미지 03",
+      "detail": "asdfasdf..03"
+    },
+    {
+      "id": "3",
+      "url": "./img/img04.jpg",
+      "title": "이미지 04",
+      "detail": "asdfasdf..04"
+    },
+    {
+      "id": "4",
+      "url": "./img/img05.jpg",
+      "title": "이미지 05",
+      "detail": "asdfasdf..05"
+    },
+    {
+      "id": "5",
+      "url": "./img/img06.jpg",
+      "title": "이미지 06",
+      "detail": "asdfasdf..06"
+    },
+    {
+      "id": "6",
+      "url": "./img/img07.jpg",
+      "title": "이미지 07",
+      "detail": "asdfasdf..07"
+    },
+    {
+      "id": "7",
+      "url": "./img/img08.jpg",
+      "title": "이미지 08",
+      "detail": "asdfasdf..08"
+    },
+    {
+      "id": "8",
+      "url": "./img/img09.jpg",
+      "title": "이미지 09",
+      "detail": "asdfasdf..09"
+    },
+    {
+      "id": "9",
+      "url": "./img/img10.jpg",
+      "title": "이미지 10",
+      "detail": "asdfasdf..10"
+    }
+  ]
+}

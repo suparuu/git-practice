@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .swiper-slide:nth-of-type(even){
+            background-color: red;
+        }
+        .swiper-slide:nth-of-type(odd){
+            background-color: purple;
+        }
+
+        .swiper-wrapper {
+            height: 400px;
+        }
+    </style>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- Swiper JS -->
+
+    <!-- Initialize Swiper -->
+    <script>
+        function init() {
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+/*                 slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3, */
+                loopFillGroupWithBlank: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                autoplay: {
+                    delay: 1000,
+                    disableOnInteraction: false,
+                },
+                on : {
+                    slideChange : function(e) {
+/*                         const elActive = document.querySelector('.swiper-slide-next')
+                        if(elActive){
+                            elActive.style = `color:white`;
+                        } */    
+
+                        console.log(e.activeIndex,
+                        e.realIndex)
+                    }
+                }
+            });
+        }
+        window.onload = init;
+    </script>
+
+</body>
+
+</html>

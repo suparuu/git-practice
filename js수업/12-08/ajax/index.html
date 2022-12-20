@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <article class="gallery2">
+        <div class="thumb">
+            <button>버튼</button>
+            <figure><img src="#"></figure>
+        </div>
+        <div class="detail">
+            <article>
+                <figure>
+                    <img src="./img/img01.jpg">
+                    <figcaption>
+                        <h2>이미지명</h2>
+                        애봉임다
+                    </figcaption>
+                </figure>
+            </article>
+        </div>
+    </article>
+
+    <style>
+        figure {
+            margin: 0;
+        }
+
+        .gallery2 {
+            width: 70%;
+            margin: 200px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .gallery2 .thumb {
+            width: 10%;
+        }
+
+        .gallery2 .thumb figure img {
+            width: 100%;
+            display: none;
+        }
+
+        .gallery2 .thumb figure.on img {
+            display: block;
+        }
+
+        .gallery2 .detail article {
+            width: 80%;
+            padding: 0 5%;
+        }
+
+        .gallery2 .detail article img {
+            width: 100%;
+        }
+
+        .gallery2 .thumb button {
+            margin: 40px auto;
+            justify-content: center;
+            display: flex;
+            width: 50px;
+            height: 50px;
+            align-items: center;
+            background-color: aqua;
+            color: red;
+        }
+        .detail article figure{
+            opacity: 0;
+        }
+        .detail article figure.on{
+            opacity: 1;
+        }
+
+    </style>
+</body>
+
+</html>

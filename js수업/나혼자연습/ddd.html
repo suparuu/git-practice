@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="box01">
+        <h2>쇼핑 드가자아아</h2>
+        <div class="main01">
+<!--             <div class='text01'>
+                <p>aa</p>
+                <button class='btn02'>aa</button>
+                </div> -->
+        </div>
+        <form>
+            <input type = 'text' name ='text'>
+            <button class="btn01">💕</button>
+        </form>
+    </div>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        .box01{
+            margin: 0 auto;
+            width: 500px;
+            height: 750px;
+            background-color: royalblue;
+            border-radius: 5%;
+        }
+        .box01 h2{
+            margin-top: 0pt;
+            text-align: center;
+            color: #000;
+            background-color: skyblue;
+            border-radius: 10px 10px 0 0;
+        }
+        .main01{    
+            width: 400px;
+            height: 400px;
+            border: 2px solid #000;
+            background-color: antiquewhite;
+            margin: 0 auto;
+            border-radius: 5%;
+            padding: 5px;
+            overflow:auto;
+            
+        }
+        input{
+            width: 50%;
+            display: flex;
+            border-radius: 10px;
+            background-color: rgb(158, 233, 238);
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 100%;
+        }
+        .btn01{
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+            text-align: center;
+            padding: 0;
+            border: none;
+            background-color: rgba(246, 201, 18, 0.94);
+            }
+        .text01{
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+            margin: 0 auto;
+        }
+        .btn02{
+            height: 25px;
+            background: transparent;
+            border: none;
+            
+        }
+        .text01 p{
+            margin: 0;
+        }
+    </style>
+
+    <script>
+        const elBox = document.querySelector('.box01'),
+        elMain01 = document.querySelector('.main01'),
+        elBtn = document.querySelector('.btn01'),
+        elInput = document.querySelector('input');
+        
+        elBtn.addEventListener('click',function(e){
+            e.preventDefault();
+            addText();
+            
+        })
+        let Num = 0
+        function addText(){
+            text = elInput.value;
+            if(text){
+                    elMain01.innerHTML += `<div class='text01'>
+                    <p>${text}</p>
+                    <button class=btn02>❌</button>
+                    </div>`;
+                    elInput.value = '';
+                    Num++
+                    
+                    const elBtn02 = document.querySelectorAll('.btn02')
+                    console.log(elBtn02)
+                    elBtn02.forEach(function(a,key){
+                        a.addEventListener('click',function(){
+                            a.parentElement.remove();
+                        })
+                    })
+                }
+
+                /*  elBtn02.addEventListener('click',deleteList); */
+            };
+            
+                
+         /*    elMain01.addEventListener('click',function(event){
+                const elDelbtn = document.querySelector(`button data-id=${Num}`)
+                let bb = event.target.dataset.id;
+                if(bb){
+                    console.log(elDelbtn);
+                    elDelbtn.remove()
+                }
+            })
+                 */
+                
+/* 
+        function deleteList(e){
+            console.log(e);
+            console.log(e.target);
+            console.log(e.target.parentElement);
+        }; */
+        
+
+    
+        
+    
+
+        
+        
+        
+    </script>
+
+
+</body>
+</html>
