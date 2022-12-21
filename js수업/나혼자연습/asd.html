@@ -7,7 +7,31 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container01">
+        <span>a</span>
+        <span>a</span>
+        <span>a</span>
+        <span>a</span>
+        <span>a</span>
+        <span>a</span>
+        <span>a</span>
+        <span>a</span>
+        <span>a</span>
+    </div>
 
+    <style>
+        .container01{
+            display: grid;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            grid-template-columns: repeat(3,33%);
+            grid-template-rows: repeat(3,33%);
+            }
+        span{
+            border: 1px solid rgb(58, 134, 99);
+        }
+    </style>
 
 </body>
 </html>
