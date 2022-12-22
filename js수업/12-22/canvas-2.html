@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas width="500" height="500"></canvas>
+
+    <script>
+        const canvas = document.querySelector('canvas'),
+            ctx = canvas.getContext('2d');
+        /*         let x = 0;
+                let y = 0;
+        
+                function draw() {
+                    x += 50;
+                    ctx.clearRect(0, 0, 500, 500);
+                    ctx.fillStyle = 'aquamarine';
+                    ctx.fillRect(x, 0, 100, 100);
+                    requestAnimationFrame(draw);
+                    if(x==500){
+                        x=0
+                    }
+                }
+                draw(); */
+        function ran(n) {
+            return Math.floor(Math.random() * n);
+        }
+
+        class RectOject {
+            constructor() {
+                this.x = ran(250),
+                    this.y = ran(250),
+                    this.w = ran(100) + 50,
+                    this.h = ran(100) + 50,
+                    this.c = `rgb(${ran(255)},${ran(255)},${ran(255)})`;
+            }
+            draw() {
+                ctx.fillStyle = this.c;
+                ctx.fillRect(this.x, this.y, this.w, this.h);
+            }
+        }
+
+        let rect = [];
+        for (let i = 0; i < 100; i++) {
+            rect.push(new RectOject());
+        }
+        function ani() {
+            ctx.clearRect(0, 0, 500, 500)
+            rect.forEach(r => {
+                r.x += 10;
+                if (r.x == 500) {
+                    r.x = 0
+                }
+                r.draw()
+            })
+            requestAnimationFrame(ani);
+        }
+        ani();
+
+
+
+    </script>
+
+</body>
+
+</html>
