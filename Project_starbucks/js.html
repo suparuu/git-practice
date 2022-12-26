@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section class="ex01">a</section>
+        <section class="ex02">s</section>
+        <section class="ex03">d</section>
+        <section class="ex04">f</section>
+        <section class="ex05">
+            <div class="flexbox01">
+                <div class="textbox01">
+                    <h2>aaaaaaa</h2>
+                    <span>asd</span><br>
+                    <span>asd</span><br>
+                    <span>asd</span><br>
+                    <span>asd</span>
+                </div>
+                <div class="imgbox01">
+                    <span style="position: absolute;">sdfkljsdlkajef</span>
+                    <img src="./menu01_1_all.jpg">
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <div>AAA</div>
+        <div>BBB</div>
+        <div>CCC</div>
+        <div>DDD</div>
+        <div>EEE</div>
+    </aside>
+
+    <style>
+        main {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            transition: 1s;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10rem;
+            flex-shrink: 0;
+        }
+        .ex01{
+            background-image: url("./KakaoTalk_20221226_165419627.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .ex02{
+            background-image: url("./web-design-2906159_960_720.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .ex03{
+
+        }
+
+        section:nth-child(even) {
+            background-color: aqua;
+        }
+
+
+
+        .flexbox01 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .textbox01 {
+            width: 50%;
+            text-align: center;
+            height: 50%;
+        }
+
+        .textbox01 h2 {
+            font-size: 30px;
+        }
+
+        .textbox01 span {
+            font-size: 20px;
+        }
+
+        .imgbox01 {
+            width: 50%;
+        }
+
+        .imgbox01 img {
+            width: 100%;
+        }
+
+        aside {
+            position: fixed;
+            right: 3%;
+            top: 80%;
+            height: 200px;
+        }
+
+        aside div {
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0.2;
+        }
+
+        aside div:hover {
+            opacity: 1;
+            color: blue;
+
+        }
+
+        aside div.active {
+            color: blue;
+            opacity: 1;
+        }
+    </style>
+    <script>
+        const elMain = document.querySelector('main'),
+            elSec = document.querySelectorAll('section'),
+            elTextbox01 = document.querySelector('.textbox01'),
+            elImgbox01 = document.querySelector('imgbox01');
+
+        let offset = [],
+            pos = { y: 0, y2: 0, state: true };
+
+        elSec.forEach(function (section) {
+            offset.push(section.offsetTop);
+        })
+
+        let move = 0;
+
+        elSec.forEach(function (elSection, key) {
+            elSection.addEventListener('mousewheel', function () {// if문 쓰기전 console log event찍어봤을 때 밑에 wheel Delta로 스크롤 시 음수,양수 확인
+                animation(key);
+
+            })
+        })
+        let B = 0;
+        function animation(key) {
+            try {
+                if (event.wheelDelta < 0) {// --> 다음 형제요소 출력
+
+                    move = elSec[key].nextElementSibling.offsetTop;
+                    key++;
+
+
+                } else if (event.wheelDelta > 0) {//--> 이전 형제요소 출력
+
+                    move = elSec[key].previousElementSibling.offsetTop;
+                    key--;
+
+                } else {
+                    move = elSec[key].offsetTop;
+
+
+                }
+            } catch { }
+            elMain.style = `transform:translateY(-${move}px)`;
+            update(key);
+        }
+
+        const elBtns = document.querySelectorAll('aside div');
+        elBtns.forEach(function (btn, key) {
+            btn.addEventListener('click', function () {
+                elBtns[B].classList.remove('active')
+                this.classList.add('active')
+                animation(key)
+            })
+        })
+        function update(key) {
+            elBtns[B].classList.remove('active');
+            elBtns[key].classList.add('active');
+            B = key;
+        }
+
+        elBtns.forEach(function (btn, key) {
+            btn.addEventListener('click', function () {
+                console.log('asdf')
+                elBtns[B].classList.remove('active')
+                this.classList.add('active')
+                B = key;
+                animation(key)
+            })
+        })
+
+
+
+        /*
+        let move = 0
+        let B = 0;
+        
+        
+        
+                console.log()
+                elSec.forEach(function (section, key) {
+                    section.addEventListener('mousewheel', function () {
+                        try {
+                            if (event.wheelDelta < 0) {
+                                move = elSec[B].nextElementSibling.offsetTop;
+                                B++;
+                            } else if (event.wheelDelta > 0) {
+                                move = elSec[B].previousElementSibling.offsetTop;
+                                B--;
+                            } else {
+                                move = elSec[B].offsetTop;
+                            }
+                        } catch { }
+                        elMain.style = `transform:translateY(-${move}px)`;
+                        console.log('aasdad');
+        
+                        update(B);
+                    })
+        
+                })
+        
+         */
+
+
+    </script>
+
+</body>
+
+</html>
