@@ -9,11 +9,17 @@
 </head>
 
 <body>
+    <header>
+        <div>
+            <img src="./facebook.png">
+        </div>
+    </header>
     <main>
         <section class="ex01">a</section>
-        <section class="ex02">s</section>
+        <section class="ex02">
+            <div style="width: 100%; height: 50vh; background-color: black;">
+            </div></section>
         <section class="ex03">d</section>
-        <section class="ex04">f</section>
         <section class="ex05">
             <div class="flexbox01">
                 <div class="textbox01">
@@ -24,7 +30,7 @@
                     <span>asd</span>
                 </div>
                 <div class="imgbox01">
-                    <span style="position: absolute;">sdfkljsdlkajef</span>
+                    <span style="position: absolute;">bb</span>
                     <img src="./menu01_1_all.jpg">
                 </div>
             </div>
@@ -34,11 +40,44 @@
         <div>AAA</div>
         <div>BBB</div>
         <div>CCC</div>
-        <div>DDD</div>
         <div>EEE</div>
     </aside>
+    <footer>
+        <div>
+            <ul>
+                <span>머시기거시기</span>
+                <span>머시기거시기</span>
+                <span>머시기거시기</span>
+            </ul>
+            <ul>
+                <img src="./facebook.png">
+                <img src="./instagram.png">
+                <img src="./naver.png">
+            </ul>
+        </div>
+    </footer>
 
     <style>
+        header {
+            padding: 0px;
+            margin: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            position: fixed;
+            background-color: #ddd;
+            z-index: 2;
+
+        }
+
+        header div {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #ddd;
+
+        }
+
         main {
             position: fixed;
             width: 100%;
@@ -56,27 +95,25 @@
             font-size: 10rem;
             flex-shrink: 0;
         }
-        .ex01{
+
+        .ex01 {
             background-image: url("./KakaoTalk_20221226_165419627.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
-        .ex02{
-            background-image: url("./web-design-2906159_960_720.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .ex03{
 
+        .ex02 {
+            background-color: antiquewhite;
+        }
+
+        section:nth-child(odd) {
+            background-color: #00704a;
         }
 
         section:nth-child(even) {
-            background-color: aqua;
+            background-color: #ddd;
         }
-
-
 
         .flexbox01 {
             display: flex;
@@ -104,7 +141,7 @@
         }
 
         .imgbox01 img {
-            width: 100%;
+            width: 500px;
         }
 
         aside {
@@ -129,6 +166,23 @@
         aside div.active {
             color: blue;
             opacity: 1;
+        }
+
+        footer {
+            left: 0;
+            bottom: 0;
+            z-index: 3;
+
+        }
+
+        footer div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        body {
+            margin: 0;
         }
     </style>
     <script>
