@@ -15,12 +15,10 @@
         </div>
     </header>
     <main>
-        <section class="ex01">a</section>
-        <section class="ex02">
-            <div style="width: 100%; height: 50vh; background-color: black;">
-            </div></section>
-        <section class="ex03">d</section>
-        <section class="ex05">
+        <section class="ex01 scroll-event">a</section>
+        <section class="ex02 scroll-event">b</section>
+        <section class="ex03 scroll-event">d</section>
+        <section class="ex04 ">
             <div class="flexbox01">
                 <div class="textbox01">
                     <h2>aaaaaaa</h2>
@@ -35,12 +33,31 @@
                 </div>
             </div>
         </section>
+        <section class="ex05">
+            <div class="color01">1</div>
+            <div class="color02">2</div>
+            <div class="color03">3</div>
+            <div class="color04">4</div>
+        </section>
+        <section class="ex06">
+            <div class="color01">1</div>
+            <div class="color02">2</div>
+            <div class="color03">3</div>
+        </section>
+        <section class="ex07">
+            <div class="color01">1</div>
+            <div class="color02">2</div>
+            <div class="color03">3</div>
+        </section>
     </main>
     <aside>
-        <div>AAA</div>
-        <div>BBB</div>
-        <div>CCC</div>
-        <div>EEE</div>
+        <div>1번째</div>
+        <div>2번째</div>
+        <div>3번째</div>
+        <div>4번째</div>
+        <div>게임1</div>
+        <div>게임2</div>
+        <div>게임3</div>
     </aside>
     <footer>
         <div>
@@ -147,7 +164,7 @@
         aside {
             position: fixed;
             right: 3%;
-            top: 80%;
+            top: 70%;
             height: 200px;
         }
 
@@ -184,12 +201,43 @@
         body {
             margin: 0;
         }
+
+        .color01 {
+            width: 200px;
+            background-color: rgba(97, 125, 179, 0.164);
+            height: 200px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .color02 {
+            width: 200px;
+            background-color: rgb(202, 219, 161);
+            height: 200px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .color03 {
+            width: 200px;
+            background-color: rgb(92, 255, 132);
+            height: 200px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        .color04 {
+            width: 200px;
+            background-color: rgb(92, 90, 238);
+            height: 200px;
+            border-radius: 50%;
+            text-align: center;
+        }
     </style>
     <script>
         const elMain = document.querySelector('main'),
-            elSec = document.querySelectorAll('section'),
+            elSec = document.querySelectorAll('.scroll-event'),
             elTextbox01 = document.querySelector('.textbox01'),
-            elImgbox01 = document.querySelector('imgbox01');
+            elImgbox01 = document.querySelector('.imgbox01');
 
         let offset = [],
             pos = { y: 0, y2: 0, state: true };
@@ -210,10 +258,8 @@
         function animation(key) {
             try {
                 if (event.wheelDelta < 0) {// --> 다음 형제요소 출력
-
                     move = elSec[key].nextElementSibling.offsetTop;
                     key++;
-
 
                 } else if (event.wheelDelta > 0) {//--> 이전 형제요소 출력
 
@@ -222,7 +268,6 @@
 
                 } else {
                     move = elSec[key].offsetTop;
-
 
                 }
             } catch { }
@@ -246,7 +291,7 @@
 
         elBtns.forEach(function (btn, key) {
             btn.addEventListener('click', function () {
-                console.log('asdf')
+                console .log('asdf')
                 elBtns[B].classList.remove('active')
                 this.classList.add('active')
                 B = key;
