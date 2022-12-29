@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section class="box01">
+            <ul>
+                <div>1번</div>
+                <div>2번</div>
+            </ul>
+        </section>
+        <section class="box02">
+            <ul>
+                <div>1번</div>
+                <div>2번</div>
+            </ul>
+        </section>
+        <section class="box03">
+            <ul>
+                <div>1번</div>
+                <div>2번</div>
+            </ul>
+        </section>
+    </main>
+
+    <style>
+        main {
+            margin: 0 auto;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            transition: 1s;
+        }
+
+        .box01 {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .box02 {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(202, 159, 241);
+        }
+
+        .box03 {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(168, 241, 168);
+        }
+
+        ul {
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        section div:nth-child(1) {
+            width: 200px;
+            background-color: aqua;
+            height: 200px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        section div:nth-child(2) {
+            width: 200px;
+            background-color: rgba(97, 125, 179, 0.164);
+            height: 200px;
+            border-radius: 50%;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+
+
+        let data = {
+            "test": {
+                "thin": {
+                    "yes": {
+                        "0.5이상": ["ciga", "1"],
+                        "0.5미만": "결과(담배고유번호)"
+                    },
+
+                    "no": {
+                        "0.5이상": "결과(담배고유번호)",
+                        "0.5미만": "결과(담배고유번호)"
+                    }
+                },
+                "thick": {
+                    "yes": {
+                        "0.5이상": "결과(담배고유번호)",
+                        "0.5미만": "결과(담배고유번호)"
+                    },
+                    "no": {
+                        "0.5이상": "결과(담배고유번호)",
+                        "0.5미만": "결과(담배고유번호)"
+                    }
+                }
+            }
+        }
+        let arr = ['thin', 'yes', '0.5이상']
+        let result = data.test[arr[0]][arr[1]][arr[2]];
+
+        let product = {
+            "ciga": [
+                {
+                    "id": "0",
+                    "url": "./img/img01.jpg",
+                    "title": "팔리아멘트 아쿠아5",
+                    "detail": "니코틴0.5mg 타르 5mg"
+                },
+                {
+                    "id": "1",
+                    "url": "./img/img02.jpg",
+                    "title": "팔리아멘트 아쿠아3",
+                    "detail": "asdfasdf..02"
+                }
+            ]
+        }
+
+        let a = product[result[0]][result[1]];
+        console.log(
+
+            a.url,
+            a.title,
+            a.detail
+        )
+
+
+
+
+
+
+
+
+
+        const elMain = document.querySelector('main'),
+            elSec = document.querySelectorAll('section'),
+            elUl = document.querySelectorAll('ul'),
+            elDiv = document.querySelectorAll('div');
+
+        let offset = [];
+        elSec.forEach(function (section, key) {
+            offset.push(section.offsetTop)
+            console.log(section.offsetTop)
+        })
+        console.log(offset)
+
+        elDiv.forEach(function (div, key) {
+            div.addEventListener('click', function () {
+                div.addEventListener('click', function () {
+                elMain.style = `transform:translateY(-${window.innerHeight * 1}px)`
+                console.log('asd')
+            })
+        })
+
+    </script>
