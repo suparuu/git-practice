@@ -5,38 +5,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/hello.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
     <title>Document</title>
 </head>
 
 <body>
     <main>
-        <section class="box01">
+        <section class="first-banner scroll-event">
+            <div class="first-box">
+                <span>나와 어울리는<br> 담배 찾기</span>
+            </div>
+            <div class="first-box2">
+                <p>고객님께 잘 맞는 담배를 찾기 위한 n가지 질문입니다.</p>
+                <div class="btn">시작!</div>
+            </div>
+            <div class="first-box-loop">
+                <img src="./img/01_esse_change_himalaya.jpg" alt="">
+                <img src="./img/02_sevenstars.jpg" alt="">
+                <img src="./img/03_africa_sunday.jpg" alt="">
+                <img src="./img/04_marboro_hybrid5.jpg" alt="">
+                <img src="./img/05_bohem_cubana_double.jpg" alt="">
+                <img src="./img/06_esse_change_up.jpeg" alt="">
+                <img src="./img/07_marlboro_red.jpg" alt="">
+                <img src="./img/08_lamborghini_Icevolt_gt.jpg" alt="">
+            </div>
+            </video>
+        </section>
+
+        <section class="box01 scroll-event">
             <ul>
                 <div>1번</div>
                 <div>2번</div>
             </ul>
         </section>
-        <section class="box02">
+        <section class="box02 scroll-event">
             <ul>
                 <div>1번</div>
                 <div>2번</div>
             </ul>
         </section>
-        <section class="box03">
+        <section class="box03 scroll-event">
             <ul>
                 <div>1번</div>
                 <div>2번</div>
             </ul>
         </section>
     </main>
+    <script src="./js/hello.js"></script>
 
-    <style>
+    <!-- <style>
         main {
             margin: 0 auto;
             width: 100%;
             height: 100vh;
             position: fixed;
-            transition: 1s;
+        }
+
+        main .first-banner {
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            line-height: 2.3;
+            background-color: aquamarine;
+        }
+        main .first-banner .first-box {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main  .first-banner .first-box span {
+            font-size: 100px;
+            font-weight: bold;
+            font-family: "Do hyeon";
+        }
+
+        main  .first-banner .first-box2 {
+            font-size: 50px;
+            font-family: "Nanum Gothic Coding";
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main  .first-banner .first-box2 p {
+            font-size: 40px;
+            font-family: "Nanum Gothic Coding";
+        }
+
+        main  .first-banner .first-box2 .btn {
+            width: 150px;
+            height: 50px;
+            font-size: 30px;
+            font-family: "Nanum Gothic Coding";
+            border-radius: 25px;
+            color: aqua;
+            background-color: blueviolet;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main  .first-banner .first-box-loop {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        main  .first-banner .first-box-loop img {
+            width: 100px;
         }
 
         .box01 {
@@ -65,7 +150,7 @@
             margin: 0 auto;
         }
 
-        section div:nth-child(1) {
+        section ul div:nth-child(1) {
             width: 200px;
             background-color: aqua;
             height: 200px;
@@ -73,7 +158,7 @@
             text-align: center;
         }
 
-        section div:nth-child(2) {
+        section ul div:nth-child(2) {
             width: 200px;
             background-color: rgba(97, 125, 179, 0.164);
             height: 200px;
@@ -84,9 +169,9 @@
         body {
             margin: 0;
         }
-    </style>
+    </style> -->
 
-    <script>
+   <!--  <script>
         let data = {
             "test": {
                 "thin": {
@@ -142,8 +227,9 @@
         ) */
 
         const elMain = document.querySelector('main'),
-            elSec = document.querySelectorAll('section'),
+            elSec = document.querySelectorAll('.scroll-event'),
             elUl = document.querySelectorAll('ul'),
+            elDiv00 = document.querySelector('.btn'),
             elDiv01 = document.querySelectorAll('.box01 div'),
             elDiv02 = document.querySelectorAll('.box02 div'),
             elDiv03 = document.querySelectorAll('.box03 div');
@@ -155,16 +241,22 @@
         let A = 0;
 
         let result01 = [];
+        console.log(window.innerHeight*2)
+
+        elDiv00.addEventListener('click',function(){
+            elMain.style = `transform:translateY(-${window.innerHeight}px)`
+            
+        })
         elDiv01.forEach(function (div, key) {
             div.addEventListener('click', function () {
-                if(key==0){
-                result01.push('thick')
-                    elMain.style = `transform:translateY(-${window.innerHeight * 1}px)`
+                if (key == 0) {
+                    result01.push('thick')
+                    elMain.style = `transform:translateY(-${window.innerHeight * 2}px)`
                     console.log(result01)
                 }
-                else{
+                else {
                     result01.push('thin')
-                    elMain.style = `transform:translateY(-${window.innerHeight * 1}px)`
+                    elMain.style = `transform:translateY(-${window.innerHeight * 2}px)`
                     console.log(result01)
                 }
             })
@@ -172,42 +264,41 @@
         let result02 = [];
         elDiv02.forEach(function (div, key) {
             div.addEventListener('click', function () {
-                if(key==0){
-                    elMain.style = `transform:translateY(-${window.innerHeight * 2}px)`
+                if (key == 0) {
+                    elMain.style = `transform:translateY(-${window.innerHeight * 3}px)`
                     result01.push('yes')
                     console.log(result01)
 
                 }
-                else{
-                    elMain.style = `transform:translateY(-${window.innerHeight * 2}px)`
+                else {
+                    elMain.style = `transform:translateY(-${window.innerHeight * 3}px)`
                     result01.push('no')
                     console.log(result01)
 
                 }
             })
         })
-
-        elDiv03.forEach(function(div,key){
-            div.addEventListener('click',function(){
-                if(key==0){
+        elDiv03.forEach(function (div, key) {
+            div.addEventListener('click', function () {
+                if (key == 0) {
                     result01.push('more')
                     console.log(result01)
                 }
-                else{
+                else {
                     result01.push('less')
                     console.log(result01)
                 }
-                
             })
         })
-
-
-        
-
+     
 
 
 
-    </script>
+
+
+
+
+    </> -->
 
 </body>
 

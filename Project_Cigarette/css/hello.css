@@ -1,0 +1,126 @@
+@keyframes Ani01 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+main .first-banner {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 2.3;
+  background-color: aquamarine;
+}
+main .first-banner .first-box {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .first-banner .first-box span {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Do hyeon";
+}
+
+main .first-banner .first-box2 {
+  font-size: 50px;
+  font-family: "Nanum Gothic Coding";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .first-banner .first-box2 p {
+  font-size: 40px;
+  font-family: "Nanum Gothic Coding";
+}
+
+main .first-banner .first-box2 .btn {
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+  font-family: "Nanum Gothic Coding";
+  border-radius: 25px;
+  color: aqua;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .first-banner .first-box-loop {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main .first-banner .first-box-loop img {
+  width: 100px;
+}
+
+.box01 {
+  width: 100%;
+  height: 100vh;
+}
+
+.box02 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(202, 159, 241);
+}
+
+.box03 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(168, 241, 168);
+}
+
+ul {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+section ul div:nth-child(1) {
+  width: 200px;
+  background-color: aqua;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+section ul div:nth-child(2) {
+  width: 200px;
+  background-color: rgba(97, 125, 179, 0.164);
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
