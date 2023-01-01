@@ -27,6 +27,7 @@ console.log(data.test.thin)
 let arr = ['thin', 'yes', 'more']
 let result = data.test[arr[0]][arr[1]][arr[2]];
 console.log(data.test[arr[0]])
+console.log(arr)
 
 let product = {
     "ciga": [
@@ -53,17 +54,18 @@ console.log(
 ) */
 
 const elMain = document.querySelector('main'),
-    elSec = document.querySelectorAll('.scroll-event'),
+    elSec01 = document.querySelector('.first-banner'),
+    elSec02 = document.querySelector('.box01'),
+    elSec03 = document.querySelector('.box02'),
     elUl = document.querySelectorAll('ul'),
-    elDiv00 = document.querySelector('.btn'),
-    elDiv01 = document.querySelectorAll('.box01 div'),
-    elDiv02 = document.querySelectorAll('.box02 div'),
-    elDiv03 = document.querySelectorAll('.box03 div');
+    elDiv00 = document.querySelector('.btn01'),
+    elDiv01 = document.querySelectorAll('.btn02'),
+    elDiv02 = document.querySelectorAll('.btn03'),
+    elDiv03 = document.querySelectorAll('.btn04'),
+    elPopup = document.querySelector('.popup'),
+    elExit = document.querySelector('.exit'),
+    elBox03 = document.querySelector('.box03');
 
-let offset = [];
-elSec.forEach(function (section, key) {
-    offset.push(section.offsetTop)
-})
 let A = 0;
 
 let result01 = [];
@@ -71,18 +73,21 @@ console.log(window.innerHeight*2)
 
 elDiv00.addEventListener('click',function(){
     elMain.style = `transform:translateY(-${window.innerHeight}px)`
+    elSec01.classList.add('fadeout')
+
     
 })
 elDiv01.forEach(function (div, key) {
     div.addEventListener('click', function () {
+    elSec02.classList.add('fadeout')
+
+        elMain.style = `transform:translateY(-${window.innerHeight * 2}px)`
         if (key == 0) {
             result01.push('thick')
-            elMain.style = `transform:translateY(-${window.innerHeight * 2}px)`
             console.log(result01)
         }
         else {
             result01.push('thin')
-            elMain.style = `transform:translateY(-${window.innerHeight * 2}px)`
             console.log(result01)
         }
     })
@@ -90,14 +95,15 @@ elDiv01.forEach(function (div, key) {
 let result02 = [];
 elDiv02.forEach(function (div, key) {
     div.addEventListener('click', function () {
+    elSec03 .classList.add('fadeout')
+
+        elMain.style = `transform:translateY(-${window.innerHeight * 3}px)`
         if (key == 0) {
-            elMain.style = `transform:translateY(-${window.innerHeight * 3}px)`
             result01.push('yes')
             console.log(result01)
 
         }
         else {
-            elMain.style = `transform:translateY(-${window.innerHeight * 3}px)`
             result01.push('no')
             console.log(result01)
 
@@ -106,6 +112,8 @@ elDiv02.forEach(function (div, key) {
 })
 elDiv03.forEach(function (div, key) {
     div.addEventListener('click', function () {
+        elBox03.classList.add('black')
+        elPopup.classList.add('on')
         if (key == 0) {
             result01.push('more')
             console.log(result01)
@@ -115,4 +123,9 @@ elDiv03.forEach(function (div, key) {
             console.log(result01)
         }
     })
+})
+elExit.addEventListener('click',function(){
+    elPopup.classList.remove('on')
+    elBox03.classList.remove('black')
+
 })

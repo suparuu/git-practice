@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/hello.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="./css/hello.css" rel="stylesheet" />
     
     <title>Document</title>
 </head>
@@ -19,7 +19,7 @@
             </div>
             <div class="first-box2">
                 <p>고객님께 잘 맞는 담배를 찾기 위한 n가지 질문입니다.</p>
-                <div class="btn">시작!</div>
+                <div class="btn01">시작!</div>
             </div>
             <div class="first-box-loop">
                 <img src="./img/01_esse_change_himalaya.jpg" alt="">
@@ -31,29 +31,49 @@
                 <img src="./img/07_marlboro_red.jpg" alt="">
                 <img src="./img/08_lamborghini_Icevolt_gt.jpg" alt="">
             </div>
-            </video>
         </section>
 
         <section class="box01 scroll-event">
             <ul>
-                <div>1번</div>
-                <div>2번</div>
+                <div class="btn02">1번</div>
+                <div class="btn02">2번</div>
             </ul>
         </section>
         <section class="box02 scroll-event">
             <ul>
-                <div>1번</div>
-                <div>2번</div>
+                <div class="btn03">1번</div>
+                <div class="btn03">2번</div>
             </ul>
         </section>
         <section class="box03 scroll-event">
             <ul>
-                <div>1번</div>
-                <div>2번</div>
+                <div class="btn04">1번</div>
+                <div class="btn04">2번</div>
             </ul>
+
+            <div class="popup">
+                <div class="popmenu">
+                    <p>담배 종류이름 </p>
+                    <div class="exit">닫기</div>
+                    <p>머시기 머시기</p>
+                </div>
+            </div>
+            
         </section>
+
+
     </main>
     <script src="./js/hello.js"></script>
+   <!--  <script>
+        $(".box03").ready(function(){
+    $(".btn04").click(function(){
+        $(".popup").fadein()
+    })
+    $(".exit").click(function(){
+        $(".popup").fadeout()
+    })
+})
+    </script> -->
 
     <!-- <style>
         main {
