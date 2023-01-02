@@ -1,180 +1,181 @@
 /*# sourceMappingURL=hello.css.map */
-@keyframes Ani01{
-    0%{opacity: 0;
-    }
-    100%{opacity: 1;
-        }
+@keyframes Ani01 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 main {
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    transition: 1s;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  transition: 1s;
 }
 
 main .first-banner {
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    line-height: 2.3;
-    background-color: aquamarine;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  line-height: 2.3;
+  background-color: aquamarine;
 }
-main .first-banner.fadeout{
-    opacity: 0;
-    transition: 0.5s;
+main .first-banner.fadeout {
+  opacity: 0;
+  transition: 0.5s;
 }
 main .first-banner .first-box {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-main  .first-banner .first-box span {
-    font-size: 100px;
-    font-weight: bold;
-    font-family: "Do hyeon";
+main .first-banner .first-box span {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Do hyeon";
 }
 
-main  .first-banner .first-box2 {
-    font-size: 50px;
-    font-family: "Nanum Gothic Coding";
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main .first-banner .first-box2 {
+  font-size: 50px;
+  font-family: "Nanum Gothic Coding";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-main  .first-banner .first-box2 p {
-    font-size: 40px;
-    font-family: "Nanum Gothic Coding";
+main .first-banner .first-box2 p {
+  font-size: 40px;
+  font-family: "Nanum Gothic Coding";
 }
 
-main  .first-banner .first-box2 .btn01 {
-    width: 150px;
-    height: 50px;
-    font-size: 30px;
-    font-family: "Nanum Gothic Coding";
-    border-radius: 25px;
-    color: aqua;
-    background-color: blueviolet;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+main .first-banner .first-box2 .btn01 {
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+  font-family: "Nanum Gothic Coding";
+  border-radius: 25px;
+  color: aqua;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-main  .first-banner .first-box-loop {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+main .first-banner .first-box-loop {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-main  .first-banner .first-box-loop img {
-    width: 100px;
+main .first-banner .first-box-loop img {
+  width: 100px;
 }
 
 .box01 {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
-.box01.fadeout{
-    opacity: 0;
-    transition: 0.5s;
+.box01.fadeout {
+  opacity: 0;
+  transition: 0.5s;
 }
 .box02 {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(202, 159, 241);
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(202, 159, 241);
 }
-.box02.fadeout{
-    opacity: 0;
-    transition: 0.5s;
+.box02.fadeout {
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .box03 {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
 }
-.box03.black{
-    background: rgba(0,0,0,0.9);
-    transition: 1s;
-
-
+.box03.black {
+  background: rgba(0, 0, 0, 0.9);
+  transition: 0.5s;
 }
 
 ul {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 section ul div:nth-child(1) {
-    width: 200px;
-    background-color: aqua;
-    height: 200px;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
+  width: 200px;
+  background-color: aqua;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
 }
 
 section ul div:nth-child(2) {
-    width: 200px;
-    background-color: rgba(97, 125, 179, 0.164);
-    height: 200px;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
+  width: 200px;
+  background-color: rgba(97, 125, 179, 0.164);
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
-.popup{
-    background-color: rgb(36, 36, 70);
-    width: 30%;
-    height: 400px;
-    margin: 0 auto;
-    position: fixed;
-    transition: 1s;
-    display: none;
+.popup {
+  background-color: rgb(36, 36, 70);
+  width: 30%;
+  height: 400px;
+  margin: 0 auto;
+  position: fixed;
+  display: none;
 }
-.popup.on{
-    animation: Ani01;
-    display: block;
-    transition: 1s;
+.popup.on {
+  animation: Ani01;
+  transition: 1s;
 }
-.popup p{
-    font-size: 20px;
-    color: aqua;
+.popup p {
+  font-size: 20px;
+  color: aqua;
 }
-.popmenu{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.popmenu {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.exit{
-    width: 50px;
-    height: 50px;
-    background-color: bisque;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    cursor: pointer;
+.exit {
+  width: 50px;
+  height: 50px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.popup img{
+  width: 100px;  
 }

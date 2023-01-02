@@ -4,8 +4,8 @@ import sy from "./test.module.css";
 
 function App() {
   let style = {
-    "font-size": "3rem",
-    color: "blue",
+    "font-size" : "3rem",
+    "color" : "blue"
   };
   return (
     <div className="App">

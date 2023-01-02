@@ -2,85 +2,259 @@
   "test": {
     "thin": {
       "yes": {
-        "0.5이상": ["ciga", "0", "3"],
-        "0.5미만": "결과(담배고유번호)"
+        "more": ["ciga", "0", "3"],
+        "less": []
       },
 
       "no": {
-        "0.5이상": "결과(담배고유번호)",
-        "0.5미만": "결과(담배고유번호)"
+        "more": [],
+        "less": []
       }
     },
     "thick": {
       "yes": {
-        "0.5이상": "결과(담배고유번호)",
-        "0.5미만": "결과(담배고유번호)"
+        "more": [],
+        "less": []
       },
       "no": {
-        "0.5이상": "결과(담배고유번호)",
-        "0.5미만": "결과(담배고유번호)"
+        "more": [],
+        "less": []
       }
     }
   },
   "ciga": [
     {
       "id": "0",
-      "url": "./img/img01.jpg",
-      "title": "팔리아멘트 아쿠아5",
+      "url": "./img/01_esse_change_himalaya.jpg",
+      "title": "에쎄체인지 히말라야",
       "detail": "니코틴0.5mg 타르 5mg"
     },
     {
       "id": "1",
-      "url": "./img/img02.jpg",
-      "title": "팔리아멘트 아쿠아3",
+      "url": "./img/02_sevenstars.jpg",
+      "title": "세븐스타",
       "detail": "asdfasdf..02"
     },
     {
       "id": "2",
-      "url": "./img/img03.jpg",
-      "title": "이미지 03",
+      "url": "./img/03_africa_sunday.jpg",
+      "title": "아프리카 썬데이",
       "detail": "asdfasdf..03"
     },
     {
       "id": "3",
-      "url": "./img/img04.jpg",
-      "title": "이미지 04",
+      "url": "./img/04_marboro_hybrid5.jpg",
+      "title": "말보로 하이브리드 5mg",
       "detail": "asdfasdf..04"
     },
     {
       "id": "4",
-      "url": "./img/img05.jpg",
-      "title": "이미지 05",
+      "url": "./img/05_bohem_cubana_double.jpg",
+      "title": "보헴시가 쿠바나 더블",
       "detail": "asdfasdf..05"
     },
     {
       "id": "5",
-      "url": "./img/img06.jpg",
-      "title": "이미지 06",
+      "url": "./img/06_esse_change_up.jpeg",
+      "title": "에쎄 체인지업",
       "detail": "asdfasdf..06"
     },
     {
       "id": "6",
-      "url": "./img/img07.jpg",
-      "title": "이미지 07",
+      "url": "./img/07_marlboro_red.jpg",
+      "title": "말보로 레드",
       "detail": "asdfasdf..07"
     },
     {
       "id": "7",
-      "url": "./img/img08.jpg",
-      "title": "이미지 08",
+      "url": "./img/08_lamborghini_Icevolt_gt.jpg",
+      "title": "토니노 람보르기니 아이스볼트 GT",
       "detail": "asdfasdf..08"
     },
     {
       "id": "8",
-      "url": "./img/img09.jpg",
-      "title": "이미지 09",
+      "url": "./img/09_raison_french_black.jpg",
+      "title": "레종 프렌치 블랙",
       "detail": "asdfasdf..09"
     },
     {
       "id": "9",
-      "url": "./img/img10.jpg",
-      "title": "이미지 10",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "레종 휘바",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "10",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "말보로 아이스 블라스트",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "11",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "말보로 화이트 후레쉬",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "12",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "레종 프렌치 끌레오",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "13",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "필라멘트 하이브리드 5mg",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "14",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "디스 아프리카 룰라",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "15",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "에쎄 체인지 1mg",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "16",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "레종 아이스 프레쏘",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "17",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "디스 아프리카 몰라",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "18",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "말보로 블랙 후레쉬",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "19",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "레종 아이스 프레쏘",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "20",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "던힐 프로스트",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "21",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "보헴시가 슬림핏 브라운",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "22",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "보헴시가 슬림핏 화이트",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "23",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "에쎄 체인지 W",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "24",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "메비우스 LBS 옐로우",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "25",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "메비우스 LBS 블루",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "26",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "던힐 파인컷 멜로우 크러쉬",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "27",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "에쎄 체인지 린",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "28",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "에쎄 체인지 프로즌",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "29",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "말보로 셔플",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "30",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "말보로 징퓨전 더블(징더블)",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "31",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "보헴시가 리브레",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "32",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "던힐 스위치",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "33",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "레종 프렌치 폴라",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "34",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "메비우스 LBS 트로피컬 믹스",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "35",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "켄트 퍼플",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "36",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "레종 프렌치 요고",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "37",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "블랙데빌 블랙",
+      "detail": "asdfasdf..10"
+    },
+    {
+      "id": "38",
+      "url": "./img/10_raison_hyvaa.jpg",
+      "title": "레종 프렌치 썸",
       "detail": "asdfasdf..10"
     }
   ]
