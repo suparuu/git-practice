@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
-
 main {
   width: 100%;
   position: fixed;
@@ -10,7 +9,7 @@ main {
       width: 15%;
       height: 100%;
       position: fixed;
-      background: #fff;
+      background-color: #fff;
       top: 0;
       right: 0;
       display: none;
@@ -68,11 +67,18 @@ main {
           font-size: 30px;
           font-weight: bold;
           font-family: "Nanum Gothic Coding";
-          margin-top: 50px;
           border-radius: 25px;
           background: #e9ffe5;
-          color: #000;
           margin: 0 auto;
+          cursor: pointer;
+          &:active{
+            background-color: #42855b;
+          }
+          a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
         }
         img {
           width: 40px;
@@ -142,6 +148,10 @@ main {
             border-radius: 50%;
             text-align: center;
             align-items: center;
+            cursor: pointer;
+            &:active{
+                background-color: #fff;
+            }
           }
           .circle-right {
             width: 400px;
@@ -151,6 +161,10 @@ main {
             border-radius: 50%;
             text-align: center;
             align-items: center;
+            cursor: pointer;
+            &:active{
+                background-color: #fff;
+            }
           }
         }
       }
@@ -199,6 +213,10 @@ main {
             border-radius: 50%;
             text-align: center;
             align-items: center;
+            cursor: pointer;
+            &:active{
+                background-color: #fff;
+            }
           }
           .circle-right {
             width: 400px;
@@ -208,6 +226,10 @@ main {
             border-radius: 50%;
             text-align: center;
             align-items: center;
+            cursor: pointer;
+            &:active{
+                background-color: #fff;
+            }
           }
         }
       }
@@ -252,6 +274,10 @@ main {
             border-radius: 50%;
             text-align: center;
             align-items: center;
+            cursor: pointer;
+            &:active{
+                background-color: #fff;
+            }
           }
           .circle-right {
             width: 400px;
@@ -261,6 +287,10 @@ main {
             border-radius: 50%;
             text-align: center;
             align-items: center;
+            cursor: pointer;
+            &:active{
+                background-color: #fff;
+            }
           }
         }
         .popup {

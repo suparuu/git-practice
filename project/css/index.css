@@ -10,7 +10,7 @@ main .menu {
   width: 15%;
   height: 100%;
   position: fixed;
-  background: #fff;
+  background-color: #fff;
   top: 0;
   right: 0;
   display: none;
@@ -43,8 +43,7 @@ main .first-banner.fadeout {
 main .first-banner video {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 main .first-banner .first-box {
   width: 100%;
@@ -70,11 +69,18 @@ main .first-banner .first-box .btn {
   font-size: 30px;
   font-weight: bold;
   font-family: "Nanum Gothic Coding";
-  margin-top: 50px;
   border-radius: 25px;
   background: #e9ffe5;
-  color: #000;
   margin: 0 auto;
+  cursor: pointer;
+}
+main .first-banner .first-box .btn:active {
+  background-color: #42855b;
+}
+main .first-banner .first-box .btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .first-banner .first-box img {
   width: 40px;
@@ -84,19 +90,10 @@ main .first-banner .first-box .first-box-loop {
   height: 18%;
   display: flex;
   justify-content: space-around;
-  -webkit-animation: bannermove 10s linear infinite;
-          animation: bannermove 10s linear infinite;
+  animation: bannermove 10s linear infinite;
 }
 main .first-banner .first-box .first-box-loop img {
   width: 2%;
-}
-@-webkit-keyframes bannermove {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-50%, 0);
-  }
 }
 @keyframes bannermove {
   0% {
@@ -153,6 +150,10 @@ main .second-banner .second-box .circle-box .circle-left {
   border-radius: 50%;
   text-align: center;
   align-items: center;
+  cursor: pointer;
+}
+main .second-banner .second-box .circle-box .circle-left:active {
+  background-color: #fff;
 }
 main .second-banner .second-box .circle-box .circle-right {
   width: 400px;
@@ -162,6 +163,10 @@ main .second-banner .second-box .circle-box .circle-right {
   border-radius: 50%;
   text-align: center;
   align-items: center;
+  cursor: pointer;
+}
+main .second-banner .second-box .circle-box .circle-right:active {
+  background-color: #fff;
 }
 main .third-banner {
   width: 100%;
@@ -210,6 +215,10 @@ main .third-banner .third-box .circle-box .circle-left {
   border-radius: 50%;
   text-align: center;
   align-items: center;
+  cursor: pointer;
+}
+main .third-banner .third-box .circle-box .circle-left:active {
+  background-color: #fff;
 }
 main .third-banner .third-box .circle-box .circle-right {
   width: 400px;
@@ -219,6 +228,10 @@ main .third-banner .third-box .circle-box .circle-right {
   border-radius: 50%;
   text-align: center;
   align-items: center;
+  cursor: pointer;
+}
+main .third-banner .third-box .circle-box .circle-right:active {
+  background-color: #fff;
 }
 main .fourth-banner {
   width: 100%;
@@ -263,6 +276,10 @@ main .fourth-banner .fourth-box .circle-box .circle-left {
   border-radius: 50%;
   text-align: center;
   align-items: center;
+  cursor: pointer;
+}
+main .fourth-banner .fourth-box .circle-box .circle-left:active {
+  background-color: #fff;
 }
 main .fourth-banner .fourth-box .circle-box .circle-right {
   width: 400px;
@@ -272,6 +289,10 @@ main .fourth-banner .fourth-box .circle-box .circle-right {
   border-radius: 50%;
   text-align: center;
   align-items: center;
+  cursor: pointer;
+}
+main .fourth-banner .fourth-box .circle-box .circle-right:active {
+  background-color: #fff;
 }
 main .fourth-banner .fourth-box .popup {
   max-width: 1200px;

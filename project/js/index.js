@@ -3,12 +3,16 @@ $("body").append("<footer>");
 
 $("header").load("./inc.html header> div");
 $("footer").load("./inc.html footer> div");
-
+fetch("./data.json")
+  .then(function (res) {
+    return res.json();
+  })
 const elMain = document.querySelector("main"),
   elBtn = document.querySelector(".btn"),
   elBtn01 = document.querySelectorAll(".btn01"),
   elBtn02 = document.querySelectorAll(".btn02"),
-  elBtn03 = document.querySelectorAll(".btn03");
+  elBtn03 = document.querySelectorAll(".btn03"),
+  elFooter = document.querySelector("footer");
 
 console.log(window.innerHeight);
 $(".btn").click(function () {
@@ -35,4 +39,4 @@ elBtn03.forEach(function (div, key) {
     elMain.style = `transform:translateY(-${scroll3 + 112}px)`;
     $(".fourth-banner").addClass("fadeout"); //세번째 섹션 사라지는 이벤트
   });
-}); //세번째 버튼들 클릭시 아래 스크롤
+}); //네번째 버튼들 클릭시
