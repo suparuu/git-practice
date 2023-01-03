@@ -17,7 +17,7 @@ const Sub1 = () => {
     ];
 
 let result = data.filter((res)=>{return res.id == id});
-    /* result = [{id:0, name:"황금토끼"}] 와 같은 의미*/
+    /* result = [{id:0, name:"황금토끼"}] 와 같은 의미*/  
 
   return (
     <div>Sub1에 파라미터값은 {result[0].name}입니다.</div>

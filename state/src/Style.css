@@ -1,0 +1,74 @@
+html,
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  margin: 0 auto;
+}
+header a {
+  color: blue;
+}
+header a.active {
+  text-decoration: line-through;
+}
+
+main {
+  background-color: rgb(208, 175, 247);
+}
+main .text {
+  font-size: 30px;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .flexbox01 {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .flexbox01 .modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: aqua;
+  display: none;
+}
+main .flexbox01 .modal.active {
+  display: flex;
+}
+main .flexbox01 .box {
+  width: 30%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+main .flexbox01 .box .circle {
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+main .flexbox01 .box span {
+  font-size: 20px;
+}/*# sourceMappingURL=Style.css.map */

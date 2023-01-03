@@ -27,235 +27,237 @@
       "id": "0",
       "url": "./img/01_esse_change_himalaya.jpg",
       "title": "에쎄체인지 히말라야",
-      "detail": "니코틴0.5mg 타르 5mg"
+      "detail": "타르 1.0mg, 니코틴 0.10mg",
+      "tag": "#캡슐 #소다맛 #박하향"
     },
     {
       "id": "1",
       "url": "./img/02_sevenstars.jpg",
       "title": "세븐스타",
-      "detail": "asdfasdf..02"
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#고타르 #부드러움 #독함"
     },
     {
       "id": "2",
       "url": "./img/03_africa_sunday.jpg",
       "title": "아프리카 썬데이",
-      "detail": "asdfasdf..03"
+      "detail": "#캡슐 #바나나맛 #멘솔"
     },
     {
       "id": "3",
       "url": "./img/04_marboro_hybrid5.jpg",
       "title": "말보로 하이브리드 5mg",
-      "detail": "asdfasdf..04"
+      "detail": "#캡슐 #사이다맛 #민트맛"
     },
     {
       "id": "4",
       "url": "./img/05_bohem_cubana_double.jpg",
       "title": "보헴시가 쿠바나 더블",
-      "detail": "asdfasdf..05"
+      "detail": "#캡슐 #모히또맛 #청량감"
     },
     {
       "id": "5",
       "url": "./img/06_esse_change_up.jpeg",
       "title": "에쎄 체인지업",
-      "detail": "asdfasdf..06"
+      "detail": "#캡슐 #오렌지맛 #귤맛 #멘솔"
     },
     {
       "id": "6",
       "url": "./img/07_marlboro_red.jpg",
       "title": "말보로 레드",
-      "detail": "asdfasdf..07"
+      "detail": "#진함 #부드러움 #오리지널한 맛"
     },
     {
       "id": "7",
       "url": "./img/08_lamborghini_Icevolt_gt.jpg",
       "title": "토니노 람보르기니 아이스볼트 GT",
-      "detail": "asdfasdf..08"
+      "detail": "#캡슐 #강한 멘솔 #중독성"
     },
     {
       "id": "8",
       "url": "./img/09_raison_french_black.jpg",
       "title": "레종 프렌치 블랙",
-      "detail": "asdfasdf..09"
+      "detail": "#캡슐 #포도향"
     },
     {
       "id": "9",
       "url": "./img/10_raison_hyvaa.jpg",
       "title": "레종 휘바",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #멘솔 #소다맛"
     },
     {
       "id": "10",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/11_marlboro_ice_blast.jpg",
       "title": "말보로 아이스 블라스트",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #박하맛 #멘솔"
     },
     {
       "id": "11",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/12_marlboro_white_fresh.jpg",
       "title": "말보로 화이트 후레쉬",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #멘솔"
     },
     {
       "id": "12",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/14_raison_frenchcleo",
       "title": "레종 프렌치 끌레오",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #과일 #목캔디맛"
     },
     {
       "id": "13",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/15_parliament_hybrid5.jpg",
       "title": "필라멘트 하이브리드 5mg",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #깔끔 #고소함"
     },
     {
       "id": "14",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/16_africa_rula.jpg",
       "title": "디스 아프리카 룰라",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #바닐라맛 #구수한맛"
     },
     {
       "id": "15",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/17_Esse_change.jpg",
       "title": "에쎄 체인지 1mg",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #멘솔 #베이직"
     },
     {
       "id": "16",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/19_raison_icepresso.jpg",
       "title": "레종 아이스 프레쏘",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #헤이즐넛맛 #커피"
     },
     {
       "id": "17",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/20_africa_mola.jpg",
       "title": "디스 아프리카 몰라",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #바나나 #딸기 #사과 #라임 #오렌지"
     },
     {
       "id": "18",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/21_marlboro_black_fresh.jpg",
       "title": "말보로 블랙 후레쉬",
-      "detail": "asdfasdf..10"
+      "detail": "#매우시원함"
     },
     {
       "id": "19",
-      "url": "./img/10_raison_hyvaa.jpg",
-      "title": "레종 아이스 프레쏘",
-      "detail": "asdfasdf..10"
+      "url": "./img/23_raison_sunpresso.jpg",
+      "title": "레종 썬 프레쏘",
+      "detail": "#캡슐 #헤이즐넛 #오렌지맛"
     },
     {
       "id": "20",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/24_dunhill_frost.jpg",
       "title": "던힐 프로스트",
-      "detail": "asdfasdf..10"
+      "detail": "#멘솔"
     },
     {
       "id": "21",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/28_bohem_cigar_slimfit.jpg",
       "title": "보헴시가 슬림핏 브라운",
-      "detail": "asdfasdf..10"
+      "detail": "#시가맛 #캡슐 #부드러운향"
     },
     {
       "id": "22",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/29_bohem_cigar_slimfit.jpg",
       "title": "보헴시가 슬림핏 화이트",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #밀크소다맛 #고소함"
     },
     {
       "id": "23",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/30_esse_change_w.jpg",
       "title": "에쎄 체인지 W",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #와인 #소다맛"
     },
     {
       "id": "24",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/31_mevius_yellow.jpg",
       "title": "메비우스 LBS 옐로우",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #레몬맛"
     },
     {
       "id": "25",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/33_mevius_blue.jpg",
       "title": "메비우스 LBS 블루",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #목캔디 #박하맛"
     },
     {
       "id": "26",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/35_dunhill_mellow_crush.jpg",
       "title": "던힐 파인컷 멜로우 크러쉬",
-      "detail": "asdfasdf..10"
+      "detail": "#두가지 캡슐 #멘솔 #메론 #청량감"
     },
     {
       "id": "27",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/37_esse_change_linn.jpg",
       "title": "에쎄 체인지 린",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #포도 #풍선껌맛 #시원함"
     },
     {
       "id": "28",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/38_esse_change_frozen.jpg",
       "title": "에쎄 체인지 프로즌",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #포도 #깔끔함"
     },
     {
       "id": "29",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/40_marlboro_shuffle.jpg",
       "title": "말보로 셔플",
-      "detail": "asdfasdf..10"
+      "detail": "#다섯가지 캡슐 #메론 #시트러스 #멘솔 #트로피컬 #베리"
     },
     {
       "id": "30",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/41_marlboro_zing_fusion.jpg",
       "title": "말보로 징퓨전 더블(징더블)",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #복숭아맛"
     },
     {
       "id": "31",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/42_bohem_cigar_libre.jpg",
       "title": "보헴시가 리브레",
-      "detail": "asdfasdf..10"
+      "detail": "#부드러움"
     },
     {
       "id": "32",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/43_dunhill_tobacco.jpg",
       "title": "던힐 스위치",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #시원한맛"
     },
     {
       "id": "33",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/44_raison_french_pola.jpg",
       "title": "레종 프렌치 폴라",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #폴라 #복숭아맛 #부드러움"
     },
     {
       "id": "34",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/46_mevius_tropical_mix.jpg",
       "title": "메비우스 LBS 트로피컬 믹스",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #연유맛 #과일"
     },
     {
       "id": "35",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/47_kent_purple.jpg",
       "title": "켄트 퍼플",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #아로마 #포도맛"
     },
     {
       "id": "36",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/48_raison_french_yogo.jpg",
       "title": "레종 프렌치 요고",
-      "detail": "asdfasdf..10"
+      "detail": "#캡슐 #요거트 #블랙 타바코"
     },
     {
       "id": "37",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/49_black_devil.jpg",
       "title": "블랙데빌 블랙",
-      "detail": "asdfasdf..10"
+      "detail": "#헤이즐넛 #코코넛 #고급스러움"
     },
     {
       "id": "38",
-      "url": "./img/10_raison_hyvaa.jpg",
+      "url": "./img/50_raison_french_ssom.jpg",
       "title": "레종 프렌치 썸",
-      "detail": "asdfasdf..10"
+      "detail": "#두가지 캡슐 #자몽맛 #꿀맛 #단맛"
     }
   ]
 }

@@ -20,7 +20,7 @@ let ciga = [
   {
     id: "3",
     url: "./img/04_marboro_hybrid5.jpg",
-    title: "말보로 하이브리드5mm",
+    title: "말보로 하이브리드5mg",
     detail: "니코틴0.6mg 타르7mg",
   },
   {
@@ -65,7 +65,6 @@ console.log(ciga[0]); //ciga 배열 0번째 id값
   return ans.id == data.test.thin.yes.more;
 }); */
 
-
 /* let a = product[result[0]][result[1]];
 console.log(
     a.url,
@@ -84,7 +83,8 @@ const elMain = document.querySelector("main"),
   elDiv03 = document.querySelectorAll(".btn04"),
   elPopup = document.querySelector(".popup"),
   elExit = document.querySelector(".exit"),
-  elBox03 = document.querySelector(".box03");
+  elBox03 = document.querySelector(".box03"),
+  elPopmenu = document.querySelector(".popmenu");
 
 let A = 0;
 
@@ -127,21 +127,26 @@ elDiv03.forEach(function (div, key) {
     if (key == 0) {
       answer.push("more");
       let test1 = data[answer[0]][answer[1]][answer[2]]; //thin,yes,more 결과값
-      elPopup.innerHTML = `<img src="${ciga[test1[0]].url}" alt="">
+      elPopmenu.innerHTML += `<div class="imgbox">
+      <img src="${ciga[test1[0]].url}" alt="">
            <img src="${ciga[test1[1]].url}" alt="">
-           <img src="${ciga[test1[2]].url}" alt="">`;
+           <img src="${ciga[test1[2]].url}" alt="">
+           </div>`;
     } else {
       answer.push("less");
       let test1 = data[answer[0]][answer[1]][answer[2]]; //thin,yes,more 결과값
-      elPopup.innerHTML = `<img src="${ciga[test1[0]].url}" alt="">
+      elPopmenu.innerHTML += `<div class="imgbox">
+      <img src="${ciga[test1[0]].url}" alt="">
       <img src="${ciga[test1[1]].url}" alt="">
-      <img src="${ciga[test1[2]].url}" alt="">`;
+      <img src="${ciga[test1[2]].url}" alt="">
+      <div>`;
     }
     console.log(data[answer[0]][answer[1]][answer[2]]);
   });
 });
 
 $(".exit").click(function () {
+  console.log("asd");
   $(".popup").fadeOut();
   $(".box03").removeClass("black");
 });
