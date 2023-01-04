@@ -1,0 +1,17 @@
+{
+    "Movies":[{"photo":"./cubana.jpg","name":"m-1"},
+    {"photo":"./marlboro.jpg","name":"m-2"},
+    {"photo":"./lamborgini.jpg","name":"m-3"}
+],
+    "Music":[{"photo":"./marlboro.jpg","name":"mu-1"},
+    {"photo":"./marlboro.jpg","name":"mu-2"},
+    {"photo":"./marlboro.jpg","name":"mu-3"}
+],
+    "Apps":[{"photo":"./lamborgini.jpg","name":"app-1"},
+    {"photo":"./lamborgini.jpg","name":"app-2"},
+    {"photo":"./lamborgini.jpg","name":"app-3"}
+],
+    "Software":[{"photo":"./raison.jpg","name":"s-1"},
+    {"photo":"./raison.jpg","name":"s-2"},
+    {"photo":"./raison.jpg","name":"s-3"}]
+}
