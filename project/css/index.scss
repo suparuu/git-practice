@@ -303,16 +303,21 @@ main {
       font-weight: lighter;
       border-radius: 10%;
       display: none;
+      .imgbox01 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h4 {
+          font-size: 36px;
+          font-family: "Do hyeon";
+        }
+        img {
+          width: 30%;
+        }
+      }
       &.black {
         transition: 0.5s;
         display: flex;
-      }
-      h4 {
-        font-size: 36px;
-        font-family: "Do hyeon";
-      }
-      img {
-        width: 30%;
       }
     }
   }
