@@ -35,8 +35,7 @@ main li a {
 .first-banner video {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .first-banner .first-box {
   width: 100%;
@@ -84,26 +83,17 @@ main li a {
   height: 18%;
   display: flex;
   justify-content: space-between;
-  -webkit-animation: bannermove 10s linear infinite;
-          animation: bannermove 10s linear infinite;
+  animation: bannermove 50s linear infinite;
 }
 .first-banner .first-box .first-box-loop img {
   width: 3%;
-}
-@-webkit-keyframes bannermove {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-50%, 0);
-  }
 }
 @keyframes bannermove {
   0% {
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-50%, 0);
+    transform: translate(-100%, 0);
   }
 }
 
@@ -328,6 +318,9 @@ main li a {
 }
 .fourth-banner .fourth-box .popup .imgbox01 img {
   width: 30%;
+}
+.fourth-banner .fourth-box .popup .imgbox01 p {
+  font-family: "Do hyeon";
 }
 .fourth-banner .fourth-box .popup.black {
   transition: 0.5s;

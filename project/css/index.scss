@@ -83,7 +83,7 @@ main {
       display: flex;
       justify-content: space-between;
 
-      animation: bannermove 10s linear infinite;
+      animation: bannermove 50s linear infinite;
       img {
         width: 3%;
       }
@@ -92,7 +92,7 @@ main {
           transform: translate(0, 0);
         }
         100% {
-          transform: translate(-50%, 0);
+          transform: translate(-100%, 0);
         }
       }
     }
@@ -313,6 +313,9 @@ main {
         }
         img {
           width: 30%;
+        }
+        p{
+            font-family: "Do hyeon";
         }
       }
       &.black {
