@@ -3,22 +3,35 @@
     "thin": {
       "yes": {
         "more": ["35", "26"],
-        "less": ["0","5","15","23","27","28"]
+        "less": ["0", "5", "15", "23", "27", "28"]
       },
 
       "no": {
-        "more": ["41","42","43","44"],
-        "less": ["45","46","47"]
+        "more": ["41", "42", "43", "44"],
+        "less": ["45", "46", "47"]
       }
     },
     "thick": {
       "yes": {
-        "more": ["3","4","7","10","11","13","14","16","17","11","19","29"],
-        "less": ["2","12","20","25","36"]
+        "more": [
+          "3",
+          "4",
+          "7",
+          "10",
+          "11",
+          "13",
+          "14",
+          "16",
+          "17",
+          "11",
+          "19",
+          "29"
+        ],
+        "less": ["2", "12", "20", "25", "36"]
       },
       "no": {
-        "more": ["1","6","31","37"],
-        "less": ["39","55","56","57","58","48"]
+        "more": ["1", "6", "31", "37"],
+        "less": ["39", "55", "56", "57", "58", "48"]
       }
     }
   },
@@ -109,7 +122,7 @@
     },
     {
       "id": "12",
-      "url": "./img/product/14_raison_frenchcleo",
+      "url": "./img/product/14_raison_frenchcleo.jpg",
       "title": "레종 프렌치 끌레오",
       "detail": "타르 1.0mg, 니코틴 0.10mg",
       "tag": "#캡슐 #과일 #목캔디맛"
@@ -297,144 +310,144 @@
       "tag": "#두가지 캡슐 #자몽맛 #꿀맛 #단맛"
     },
     {
-        "id": "39",
-        "url": "./img/product/dunhill1.jpg",
-        "title": "던힐1mg",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "40",
-        "url": "./img/product/dunhill3.jpg",
-        "title": "던힐3mg",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "41",
-        "url": "./img/product/Esse_classic.jpg",
-        "title": "에쎄 클래식",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "42",
-        "url": "./img/product/Esse_goldenleaf.jpg",
-        "title": "에쎄 골든리프",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "43",
-        "url": "./img/product/Esse_Prime.jpg",
-        "title": "에쎄 프라임",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "44",
-        "url": "./img/product/Esse_specialGold.jpg",
-        "title": "에쎄 스페셜골드",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "45",
-        "url": "./img/product/Esse0.1.jpg",
-        "title": "에쎄 수 0.1mg",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "46",
-        "url": "./img/product/Esse0.5.jpg",
-        "title": "에쎄 수 0.5mg",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "47",
-        "url": "./img/product/Esse1.jpg",
-        "title": "에쎄 수 1mg",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "48",
-        "url": "./img/product/LSS1.jpg",
-        "title": "메비우스 LSS 1mg",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "49",
-        "url": "./img/product/LSS3.jpg",
-        "title": "메비우스 LSS 3mg",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "50",
-        "url": "./img/product/marlboro_gold.jpg",
-        "title": "말보로 골드",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "51",
-        "url": "./img/product/parliament aqua5.jpg",
-        "title": "팔리아멘트 아쿠아5",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "52",
-        "url": "./img/product/parliament_aqua3jpg.jpg",
-        "title": "팔리아멘트 아쿠아3",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "53",
-        "url": "./img/product/skyblue_gwak.jpg",
-        "title": "메비우스 스카이 블루 곽",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "54",
-        "url": "./img/product/skyblue_pack.jpg",
-        "title": "메비우스 스카이 블루 팩",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "55",
-        "url": "./img/product/theone_0.1.jpg",
-        "title": "더원 화이트",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "56",
-        "url": "./img/product/theone_0.5.jpg",
-        "title": "더원 오렌지",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "57",
-        "url": "./img/product/theone_1.jpg",
-        "title": "더원 블루",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      },
-      {
-        "id": "58",
-        "url": "./img/product/theone_impact.png",
-        "title": "더원 임팩트",
-        "detail": "타르 14.0mg, 니코틴 1.2mg",
-        "tag": "#헤이즐넛 #코코넛 #고급스러움"
-      }
+      "id": "39",
+      "url": "./img/product/dunhill1.jpg",
+      "title": "던힐1mg",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "40",
+      "url": "./img/product/dunhill3.jpg",
+      "title": "던힐3mg",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "41",
+      "url": "./img/product/Esse_classic.jpg",
+      "title": "에쎄 클래식",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "42",
+      "url": "./img/product/Esse_goldenleaf.jpg",
+      "title": "에쎄 골든리프",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "43",
+      "url": "./img/product/Esse_Prime.jpg",
+      "title": "에쎄 프라임",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "44",
+      "url": "./img/product/Esse_specialGold.jpg",
+      "title": "에쎄 스페셜골드",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "45",
+      "url": "./img/product/Esse0.1.jpg",
+      "title": "에쎄 수 0.1mg",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "46",
+      "url": "./img/product/Esse0.5.jpg",
+      "title": "에쎄 수 0.5mg",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "47",
+      "url": "./img/product/Esse1.jpg",
+      "title": "에쎄 수 1mg",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "48",
+      "url": "./img/product/LSS1.jpg",
+      "title": "메비우스 LSS 1mg",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "49",
+      "url": "./img/product/LSS3.jpg",
+      "title": "메비우스 LSS 3mg",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "50",
+      "url": "./img/product/marlboro_gold.jpg",
+      "title": "말보로 골드",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "51",
+      "url": "./img/product/parliament aqua5.jpg",
+      "title": "팔리아멘트 아쿠아5",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "52",
+      "url": "./img/product/parliament_aqua3jpg.jpg",
+      "title": "팔리아멘트 아쿠아3",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "53",
+      "url": "./img/product/skyblue_gwak.jpg",
+      "title": "메비우스 스카이 블루 곽",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "54",
+      "url": "./img/product/skyblue_pack.jpg",
+      "title": "메비우스 스카이 블루 팩",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "55",
+      "url": "./img/product/theone_0.1.jpg",
+      "title": "더원 화이트",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "56",
+      "url": "./img/product/theone_0.5.jpg",
+      "title": "더원 오렌지",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "57",
+      "url": "./img/product/theone_1.jpg",
+      "title": "더원 블루",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    },
+    {
+      "id": "58",
+      "url": "./img/product/theone_impact.png",
+      "title": "더원 임팩트",
+      "detail": "타르 14.0mg, 니코틴 1.2mg",
+      "tag": "#헤이즐넛 #코코넛 #고급스러움"
+    }
   ]
 }

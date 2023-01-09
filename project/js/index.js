@@ -4,13 +4,10 @@ $("header").load("./inc.html header> div");
 fetch("./js/data.json")
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     callback(data);
   });
 
 function callback(data) {
-  console.log(data.test);
-
   const elMain = document.querySelector("main"),
     elBtn = document.querySelector(".btn"),
     elBtn01 = document.querySelectorAll(".btn01"),
@@ -23,16 +20,12 @@ function callback(data) {
     elImgbox01 = document.querySelector(".imgbox01"),
     elImgloop = document.querySelector(".first-box-loop");
   let answer = [];
-    console.log(data.ciga.length)
-    console.log(data.ciga)
-    console.log(elImgloop )
-    function loopIn() {
-        for(i=0;i<data.ciga.length;i++){
-            console.log(data.ciga[i].url)
-            elImgloop.innerHTML += `<img src="${data.ciga[i].url}" alt="">`
-        };
+  function loopIn() {
+    for (i = 0; i < data.ciga.length; i++) {
+      elImgloop.innerHTML += `<img src="${data.ciga[i].url}" alt="">`;
     }
-    loopIn();
+  }
+  loopIn();
   elImg01.addEventListener("click", function () {
     elMenu.classList.toggle("fade");
   });
@@ -68,9 +61,7 @@ function callback(data) {
       }
     });
   }); //세번째 버튼들 클릭시 아래 스크롤
-  console.log(data);
   let scroll3 = window.innerHeight * 3;
-  console.log(elFooter.offsetHeight);
   elBtn03.forEach(function (div, key) {
     div.addEventListener("click", function () {
       $(".popup").addClass("black");
@@ -88,19 +79,14 @@ function callback(data) {
         arrFilter(test1);
       }
     });
-
-    console.log(data.ciga);
   }); //네번째 버튼들 클릭시
   $(".close").click(function () {
     console.log("asd");
     $(".popup").fadeOut();
     $(".fourth-banner").addClass("black");
-  }); //닫기버튼 클릭시  
-  $(".detail").click(function () {
-    console.log("ads");
-  });
+  }); //닫기버튼 클릭시
+  $(".detail").click(function () {});
   let datas = data.ciga;
-  console.log(datas);
 
   function arrFilter(test1) {
     let aa = test1.filter((list) => {
@@ -111,10 +97,9 @@ function callback(data) {
           <h4>${data.title}</h4>
           <img src="${data.url}" alt="" />
           <p>${data.tag}</p>
-          </div>`
-          console.log(data.tag);
+          </div>`;
         }
-      });//제이슨 데이터들 뿌려주기
+      }); //제이슨 데이터들 뿌려주기
     });
   }
 }
