@@ -26,9 +26,10 @@ function callback(data) {
     }
   }
   loopIn();
+  
   elImg01.addEventListener("click", function () {
     elMenu.classList.toggle("fade");
-  });
+  });//버거메뉴 열때
   elBtn04.addEventListener("click", function () {
     console.log("asd");
     elMenu.classList.remove("fade");
@@ -100,7 +101,7 @@ function callback(data) {
           <div class="imgbox02">
           <h4>${data.title}</h4>
           <img src="${data.url}" alt="" />
-          <p>${data.rating.replaceAll("\\n", "<br>")}</p>
+          <p>${data.tag}</p>
           </div>`;
         }
       }); //제이슨 데이터들 뿌려주기

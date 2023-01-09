@@ -9,23 +9,25 @@ fetch("./js/data.json")
 
 function callback(data) {
   const elBox = document.querySelector(".flexbigbox"),
-    elBox01 = document.querySelector(".box01"),
-    elImg01 = document.querySelector(".header-right img"),
+   elBox01 = document.querySelector(".box01"),
+   elImg01 = document.querySelector(".header-right img"),
     elBtn04 = document.querySelector(".menu img");
     elMenu = document.querySelector(".menu");
 
-
-
-  let Thick = data.KTNG.thick;
-  let Thin = data.KTNG.thin;
-
+    
     elImg01.addEventListener("click", function () {
-    elMenu.classList.toggle("fade");
-  });//버거메뉴 열때
-  elBtn04.addEventListener("click", function () {
-    console.log("asd");
-    elMenu.classList.remove("fade");
-  }); //버거메뉴 눌렀을때 열고 닫기
+        elMenu.classList.toggle("fade");
+      });//버거메뉴 열때
+      elBtn04.addEventListener("click", function () {
+        console.log("asd");
+        elMenu.classList.remove("fade");
+      }); //버거메뉴 눌렀을때 열고 닫기
+
+
+
+
+  let Thick = data.BAT.thick;
+  let Thin = data.BAT.thin;
 
   function thinIn() {
     for (i = 0; i < Thin.length; i++) {
@@ -61,6 +63,4 @@ function callback(data) {
       }
   }
   thickIn();
-
-
 }
