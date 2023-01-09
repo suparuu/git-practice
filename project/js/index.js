@@ -61,6 +61,7 @@ function callback(data) {
       }
     });
   }); //세번째 버튼들 클릭시 아래 스크롤
+
   let scroll3 = window.innerHeight * 3;
   elBtn03.forEach(function (div, key) {
     div.addEventListener("click", function () {
@@ -73,13 +74,16 @@ function callback(data) {
         answer.push("more");
         let test1 = data.test[answer[0]][answer[1]][answer[2]];
         arrFilter(test1);
+        $(".circle-box").css("display", "none");
       } else {
         answer.push("less");
         let test1 = data.test[answer[0]][answer[1]][answer[2]];
         arrFilter(test1);
+        $(".circle-box").css("display", "none");
       }
     });
   }); //네번째 버튼들 클릭시
+
   $(".close").click(function () {
     console.log("asd");
     $(".popup").fadeOut();
@@ -87,7 +91,7 @@ function callback(data) {
   }); //닫기버튼 클릭시
   $(".detail").click(function () {});
   let datas = data.ciga;
-
+  console.log(data.rating);
   function arrFilter(test1) {
     let aa = test1.filter((list) => {
       datas.forEach((data) => {
@@ -96,7 +100,7 @@ function callback(data) {
           <div class="imgbox02">
           <h4>${data.title}</h4>
           <img src="${data.url}" alt="" />
-          <p>${data.tag}</p>
+          <p>${data.rating.replaceAll("\\n", "<br>")}</p>
           </div>`;
         }
       }); //제이슨 데이터들 뿌려주기
