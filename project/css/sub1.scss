@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+
 main {
   width: 100%;
   .product-banner {
@@ -23,7 +24,9 @@ main {
     .text-box {
       width: 100%;
       height: 100px;
-      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       hr {
         position: absolute;
         width: 100%;
@@ -34,10 +37,7 @@ main {
         font-weight: bold;
         font-family: "Nanum Gothic Coding";
         font-size: 40px;
-        display: block;
         background-color: #fff;
-        position: absolute;
-        left: 45%;
       }
     }
     .flexbigbox {
@@ -123,3 +123,4 @@ footer {
     height: 100%;
   }
 }
+@import "./media.scss";

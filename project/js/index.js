@@ -26,10 +26,10 @@ function callback(data) {
     }
   }
   loopIn();
-  
+
   elImg01.addEventListener("click", function () {
     elMenu.classList.toggle("fade");
-  });//버거메뉴 열때
+  }); //버거메뉴 열때
   elBtn04.addEventListener("click", function () {
     console.log("asd");
     elMenu.classList.remove("fade");
@@ -49,6 +49,8 @@ function callback(data) {
       } else {
         answer.push("thick");
       }
+
+      console.log("asd");
     });
   }); //두번째 버튼들 클릭시 아래 스크롤
   elBtn02.forEach(function (div, key) {
@@ -75,13 +77,12 @@ function callback(data) {
         answer.push("more");
         let test1 = data.test[answer[0]][answer[1]][answer[2]];
         arrFilter(test1);
-        $(".circle-box").css("display", "none");
       } else {
         answer.push("less");
         let test1 = data.test[answer[0]][answer[1]][answer[2]];
         arrFilter(test1);
-        $(".circle-box").css("display", "none");
       }
+      $(".circle-box").css("display", "none");
     });
   }); //네번째 버튼들 클릭시
 
