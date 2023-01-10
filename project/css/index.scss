@@ -4,7 +4,7 @@ main {
   width: 100%;
   position: fixed;
   transition: 1s;
-  background-color: #fff;
+  background-color: #ebebeb;
 
   a img {
     padding: 20px;
@@ -104,7 +104,7 @@ main {
   font-size: 20px;
   font-weight: bold;
   font-family: "Do hyeon";
-  color: #000;
+  color: #161616;
   background-color: #d2d79f;
   &.fadeout {
     opacity: 0;
@@ -144,7 +144,7 @@ main {
         align-items: center;
         cursor: pointer;
         &:active {
-          background-color: #fff;
+          background-color: #ebebeb;
         }
       }
       .circle-right {
@@ -157,7 +157,7 @@ main {
         align-items: center;
         cursor: pointer;
         &:active {
-          background-color: #fff;
+          background-color: #ebebeb;
         }
       }
     }
@@ -209,7 +209,7 @@ main {
         align-items: center;
         cursor: pointer;
         &:active {
-          background-color: #fff;
+          background-color: #ebebeb;
         }
       }
       .circle-right {
@@ -222,7 +222,7 @@ main {
         align-items: center;
         cursor: pointer;
         &:active {
-          background-color: #fff;
+          background-color: #ebebeb;
         }
       }
     }
@@ -234,10 +234,10 @@ main {
   font-size: 20px;
   font-weight: bold;
   font-family: "Do hyeon";
-  color: #000;
+  color: #161616;
   background-color: #42855b;
   &.black {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     transition: 0.5s;
   }
   .fourth-box {
@@ -274,7 +274,7 @@ main {
         align-items: center;
         cursor: pointer;
         &:active {
-          background-color: #fff;
+          background-color: #ebebeb;
         }
       }
       .circle-right {
@@ -287,7 +287,7 @@ main {
         align-items: center;
         cursor: pointer;
         &:active {
-          background-color: #fff;
+          background-color: #ebebeb;
         }
       }
     }
@@ -327,11 +327,11 @@ main {
 }
 footer {
   width: 100%;
-  background-color: red;
+  background-color: #ebebeb;
   height: 10vh;
   bottom: 0;
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Do hyeon";
   font-weight: lighter;
 
