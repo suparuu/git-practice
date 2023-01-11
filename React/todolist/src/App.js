@@ -38,7 +38,7 @@ function App() {
     console.log(elItems.current)
     let count = elItems.current.filter((item)=>item&&item.className != 'active').length;
     setTodoNum(count);
-  }
+  }//할일 n개 남음 의 n숫자를 셈
 
   useEffect(update,[data]);
   return (
