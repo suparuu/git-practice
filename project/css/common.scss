@@ -103,10 +103,13 @@ header {
       right: -360px;
       line-height: 13.8;
       margin-left: 30px;
-
+      img {
+        width: 40px;
+        height: 40px;
+      }
 
       ul {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: bold;
         line-height: 3.8;
 
@@ -114,17 +117,13 @@ header {
           color: rgb(222, 222, 222);
           font-family: "Pretendard";
           font-weight: bold;
+          margin-left: 30px;
         }
       }
       &.fade {
         transition: 1s;
         transform: translateX(-360px);
-        line-height: 13.8;
-        img {
-          width: 80%;
-        }
       }
     }
   }
 }
-
