@@ -1,17 +1,18 @@
 import { useState } from "react";
 import "./App.scss";
-import { MyContext } from "./Context";
-import List from "./List";
+import AttContext, { AppC } from "./AttContext";
+import Insert from "./Insert";
+import List from "./List"
 
 function App() {
-  const [data, setData] = useState([]);
-
+  
   return (
-    <div className="App">
-      <MyContext.Provider value={{ data: data, setData, setData }}>
+    <AttContext>
+      <main>
         <List></List>
-      </MyContext.Provider>
-    </div>
+        <Insert></Insert>
+      </main>
+    </AttContext>
   );
 }
 

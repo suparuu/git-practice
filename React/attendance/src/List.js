@@ -1,38 +1,25 @@
-import { MyContext } from "./Context";
+import { AppC } from "./AttContext";
 import React, { useContext, useEffect } from "react";
-import Item from "./Item";
-import Textbox from "./Textbox";
 import $ from "jquery";
 
+
 const List = () => {
-  const { data, setData } = useContext(MyContext);
-  setData([2122]);
-
-  // console.log(data);
-
-  // useEffect(() => {
-  //   console.log("업데이트");
-  // }, [data]);
-
-  const btn = () => {
-    $(".textbox01").toggle();
-  };
+    const {data,setType, dataCtl} = useContext(AppC);
 
   return (
-    <section>
-      {data}
-      <div className="box01">
-        <div className="textbox001">
-          <button onClick={btn}>+</button>
-          <Textbox></Textbox>
-          아이템
-          {data}
-          {/* <Item></Item> */}
-        </div>
-        {/* {data && data.map((obj, key) => <Item key={key} obj={obj}></Item>)} */}
-      </div>
-    </section>
-  );
-};
+    <div>
+        <ul>
+            {data.map((obj)=>{
+                return<li key={obj.id}>
+                    {obj.name}
+                    <button onClick={()=>{dataCtl('modify', obj.id)}}>수정</button>
+                    <button onClick={()=>{dataCtl('remove', obj.id)}}>삭제</button>
+                    </li>;
+            })
+            }
+        </ul>
+    </div>
+  )
+}
 
-export default List;
+export default List
