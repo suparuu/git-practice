@@ -8,7 +8,7 @@ import {useReducer, useState, useContext} from 'react';
 const Textbox = () => {
     const [ip,setIp] = useState();
     const [data,dispatch] = useReducer(reducerFn,0);
-    console.log('asd')
+    console.log('a')
 
   return (
 

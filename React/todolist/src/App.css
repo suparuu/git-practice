@@ -38,20 +38,8 @@
   width: 45px;
   height: 45px;
 }
-.App article .list li::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  border-radius: 100%;
-  background-color: #fff;
-  border: 1px solid #999;
-}
 .App article .list li.active {
   color: #999;
-}
-.App article .list li.active::before {
-  background-color: rgb(237, 150, 248);
 }
 .App article .write input {
   width: 100%;

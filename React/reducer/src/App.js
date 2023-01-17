@@ -1,28 +1,34 @@
-import './App.css';
-import {useReducer, useState, useContext} from 'react';
-import  ReducerContext from "./ReducerContext";
-import  Textbox from "./Textbox";
+import { useState,useContext } from 'react';
+import Main from './Main';
+import ReducerContext, { RContext } from './ReducerContext';
 
+function App() {
 
-/* const initState = {
-  count:2,
-  list:[
-    {id:0, name:'개같다'}
-  ]
-} */
-
-
-function App() {                     /* 일할장소,값 */
 
   return (
-
-    <div className="App">         {/* 인자값=>action */}
     <ReducerContext>
-    <Textbox></Textbox>
+      <Main/>
     </ReducerContext>
-    </div>
-
   );
 }
 
 export default App;
+
+
+// function Main(){
+//   const {data,dispatch} = useContext(RContext);
+//   const [ip, setIp] = useState('');
+//   return(
+//       <div className="App">
+//         <h1>데이터값 = {data} </h1>
+//         <input type="text" value={ip} onChange={(e)=>setIp(e.target.value)} />
+
+//         <button onClick={()=>dispatch({type:'plus',value:ip})}>
+//           더하기
+//         </button>
+//         <button onClick={()=>dispatch({type:'minus',value:ip})}>
+//           빼기
+//         </button>
+//       </div>  
+//   )
+// }
