@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div>
+
+        </div>
+    </section>
+
+    <style>
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <script>
+        fetch("http://ddragon.leagueoflegends.com/cdn/13.1.1/data/ko_KR/champion.json")
+            .then(Response => Response.json())
+            .then(Response => write(Response))
+            .catch(err => console.error(err))
+        const Div = document.querySelector('div');
+
+        function write(data) {
+            let champ = data.data
+            console.log(data)
+            console.log(champ)
+            console.log(data)
+            let ahri = champ.Ahri.image
+            console.log(ahri.full)
+            let ahriImg = ahri.full;
+            let cmpUrl = "http://ddragon.leagueoflegends.com/cdn/13.1.1/img/champion/"
+            let sp = ahri.sprite
+
+            let uuu = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/"
+            console.log(cmpUrl + ahriImg)
+            let aaa = cmpUrl + ahriImg
+            let bbb = uuu + ahri
+            /* for(i=0;) */
+
+
+
+            Div.innerHTML = `<img src="${aaa}">
+            <img src="${bbb}">
+            `
+
+
+
+
+
+        }
+
+       /*  function cmpImg (){
+
+            for (i = 0; i < cmpImg.length; i++){
+                Div.innerHTML += 
+
+            }
+        } */
+
+
+    </script>
+</body>
+
+</html>
