@@ -22,7 +22,14 @@ const ChampData = () => {
     let aaa = cmpUrl + ahriImg;
   }
 
-  return <div> </div>;
+  return (
+    <section>
+        <div className="champbox">
+
+        </div>
+    </section>    
+
+  );
 };
 
 export default ChampData;

@@ -15,13 +15,15 @@ function App() {
   return (
     <BrowserRouter>
     <header>
-      <Link to='/'>MAIN</Link>
-      <Link to='/ChampData'></Link>
+      <Link to='/'>HOME</Link>
+      <Link to='/ChampData'>ChampData</Link>
+      <Link to="/Mid">Mid</Link>
 
     </header>
     <main> 
     <Routes>
       <Route path="/ChampData" element={<ChampData/>}></Route>
+      <Route path="/Mid" element={<Mid/>}></Route>
     </Routes>
     </main>
     </BrowserRouter>

@@ -1,0 +1,9 @@
+역할군 {Tank:탱커 Fighter:전사 Marksman:원거리 딜러 Mage:마법사 
+Assassin:암살자 Support:서포터}
+js파일 분류를 역할군으로 나누자 .
+
+나눈 역할군으로 
+캐릭터 설명 내용{blurb:캐릭터 설명, name:캐릭터 이름, partype:사용 자원, stats: 기초스텟,
+ title: 캐릭터 닉네임}
+내용 정리 
+ 
