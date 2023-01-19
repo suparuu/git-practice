@@ -10,17 +10,29 @@
 
 <body>
     <section>
-        <div>
 
-        </div>
+
     </section>
 
     <style>
-        section{
+        section {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            width: 100%;
+        }
+
+        .champbox {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
         }
     </style>
 
@@ -29,30 +41,65 @@
             .then(Response => Response.json())
             .then(Response => write(Response))
             .catch(err => console.error(err))
-        const Div = document.querySelector('div');
+            
 
+
+        const Div = document.querySelector('section');
+        console.log()
         function write(data) {
             let champ = data.data
-            console.log(data)
             console.log(champ)
             console.log(data)
             let ahri = champ.Ahri.image
+            let yuumi = champ.Yuumi.image
+            let lulu = champ.Lulu.image
             console.log(ahri.full)
             let ahriImg = ahri.full;
+            let yuumiImg = yuumi.full;
+            let luluImg = lulu.full;
             let cmpUrl = "http://ddragon.leagueoflegends.com/cdn/13.1.1/img/champion/"
+            //정사각형 이미지 url
             let sp = ahri.sprite
+            console.log(yuumiImg)
 
             let uuu = "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/"
-            console.log(cmpUrl + ahriImg)
+            console.log(cmpUrl + ahriImg, '아리 이미지')
             let aaa = cmpUrl + ahriImg
             let bbb = uuu + ahri
+            let ccc = cmpUrl + yuumiImg
+            let ddd = cmpUrl + luluImg
+
+            console.log(ccc, '유미 이미지')
+            console.log(Object.keys(champ).length, '챔프 길이')
             /* for(i=0;) */
 
+            let objLength = Object.keys(champ).length
+
+            /* for(i=0; objLength > i ; i++){
+                Div.innerHTML += `<img src="${ccc}">`
+            } */
+
+            function champName() {
+                for (const name of Object.keys(champ)) {
+                    let cmpbox = [];
+                    cmpbox.push(name)
+                    console.log(champ,"champ")
+                    Div.innerHTML += `
+                    <div class="champbox">
+                    <img src="${cmpUrl + name}.png">
+                    <p>${champ[name].name}</p>
+                    </div>`
+                }
+            }//챔피언 사진 이름 뿌린작업
+            champName();
+
+            function sortFn(a, b) {
+                if (a > b) return -1;
+                if (b > a) return 1;
+                return 0;
+            }//가나다순 정렬
 
 
-            Div.innerHTML = `<img src="${aaa}">
-            <img src="${bbb}">
-            `
 
 
 
@@ -60,13 +107,13 @@
 
         }
 
-       /*  function cmpImg (){
-
-            for (i = 0; i < cmpImg.length; i++){
-                Div.innerHTML += 
-
-            }
-        } */
+        /*  function cmpImg (){
+ 
+             for (i = 0; i < cmpImg.length; i++){
+                 Div.innerHTML += 
+ 
+             }
+         } */
 
 
     </script>

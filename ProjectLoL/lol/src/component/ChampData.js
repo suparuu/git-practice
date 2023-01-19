@@ -12,7 +12,6 @@ const ChampData = () => {
     let champ = data.data;
     console.log(data);
     console.log(champ);
-    console.log(data);
     let ahri = champ.Ahri.image;
     console.log(ahri.full);
     let ahriImg = ahri.full;
@@ -20,12 +19,22 @@ const ChampData = () => {
 
     console.log(cmpUrl + ahriImg);
     let aaa = cmpUrl + ahriImg;
+    function champName() {
+      for (const name of Object.keys(champ)) {
+        let champBoximg = champ[name].image.full
+          console.log(champBoximg,"boximg")
+          let boximg = cmpUrl + champBoximg;
+      }
+
+  }//챔피언 사진 이름 뿌린작업
+  champName();
   }
 
   return (
     <section>
         <div className="champbox">
-
+          <img src=""></img>
+          <p></p>
         </div>
     </section>    
 
