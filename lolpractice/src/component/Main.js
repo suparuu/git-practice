@@ -33,10 +33,10 @@ const Main = () => {
 
     /* console.log(ChampName, "챔프 영문이름"); */
 
+    
+      console.log(test);
     setTest(ChampName);
   }
-
-  /* console.log(test); */
   /* console.log("main", test); */
 
   return (

@@ -1,0 +1,50 @@
+body {
+  /* background-color: rgb(0,0,19); */
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  text-align: center;
+}
+header a {
+  text-decoration-line: none;
+}
+header .role {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+}
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9375rem;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+main section a {
+  text-decoration-line: none;
+  text-align: center;
+}
+main section a .imgbox01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section a .imgbox01 span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  width: 5rem;
+  white-space: nowrap;
+}/*# sourceMappingURL=App.css.map */

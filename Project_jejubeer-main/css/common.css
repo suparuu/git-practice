@@ -50,11 +50,6 @@ code {
   display: inline-block;
 }
 
-*::-moz-selection {
-  background-color: #1ecad3;
-  color: #fff;
-}
-
 *::selection {
   background-color: #1ecad3;
   color: #fff;

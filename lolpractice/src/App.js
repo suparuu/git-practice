@@ -1,15 +1,15 @@
-import "./App.css";
+import "./css/App.scss";
 import { useReducer, createContext, useState, useRef, useEffect } from "react";
-import Champ from "./Champ";
-import Main from "./Main";
-import Assassin from "./Assassin";
-import Mage from "./Mage";
-import Support from "./Support";
-import Tank from "./Tank";
-import Marksman from "./Marksman";
-import Fighter from "./Fighter";
+import Champ from "./component/Champ";
+import Main from "./component/Main";
+import Assassin from "./component/Assassin";
+import Mage from "./component/Mage";
+import Support from "./component/Support";
+import Tank from "./component/Tank";
+import Marksman from "./component/Marksman";
+import Fighter from "./component/Fighter";
+import Ex from "./component/Ex";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Ex from "./Ex";
 
 function App(props) {
   useEffect(() => {
@@ -55,8 +55,9 @@ function App(props) {
     for (let name in champ) {
       ChampName.push({ en: name, kr: champ[name].name });
     }
+    
 
-    // console.log(ChampName, "챔프 영문이름");
+     console.log(ChampName, "챔프 영문이름");
 
     setTest(ChampName);
   }
@@ -68,9 +69,9 @@ function App(props) {
   return (
     <BrowserRouter>
       <header>
-        <Link to="/Main">😀</Link>
-        <div>
-          <Link to="/Ex">연습</Link>
+        
+        <div className="role">
+          <Link to="/Main">롤 챔피언 소개</Link>
           <Link to="/Marksman">원거리 딜러</Link>
           <Link to="/Tank">탱커</Link>
           <Link to="/Mage">마법사</Link>
@@ -80,11 +81,12 @@ function App(props) {
         </div>
       </header>
 
-      <section>
+      <main>
+        <section>
         <Routes>
           <Route
             path="/Ex"
-            element={<Ex test={test} setTest={setTest} />}
+            element={<Ex test={{test}} setTest={setTest} />}
           ></Route>
           <Route path="/Main" element={<Main />}></Route>
           <Route
@@ -98,7 +100,8 @@ function App(props) {
           <Route path="/Support" element={<Support value={test} />}></Route>
           <Route path="/Fighter" element={<Fighter value={test} />}></Route>
         </Routes>
-      </section>
+        </section>
+      </main>
     </BrowserRouter>
   );
 }

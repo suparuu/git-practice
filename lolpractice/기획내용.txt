@@ -41,3 +41,7 @@ spells:액티브 스킬 [
     }
 ]
 
+
+챔피언 상세 설명 background-color: rgb(0,0,19);
+
+이미지 에다가는  filter: blur(8px); 
