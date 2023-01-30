@@ -8,6 +8,7 @@ import {
 } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Champ from "./Champ";
+import "../css/Main.scss";
 
 const Main = () => {
   useEffect(() => {
@@ -33,28 +34,27 @@ const Main = () => {
 
     /* console.log(ChampName, "챔프 영문이름"); */
 
-    
-      console.log(test);
+    console.log(test);
     setTest(ChampName);
   }
   /* console.log("main", test); */
 
   return (
-    <>
+    <section className="champbox01">
       {test &&
         test.map((obj, key) => {
           return (
             <Link to={`/Champ/${obj.en}`}>
-              <div className="imgbox01">
-                <img
-                  src={`http://ddragon.leagueoflegends.com/cdn/13.1.1/img/champion/${obj.en}.png`}
-                ></img>
-                <span>{[obj.kr]}</span>
-              </div>
+                <div className="imgbox01">
+                  <img
+                    src={`http://ddragon.leagueoflegends.com/cdn/13.1.1/img/champion/${obj.en}.png`}
+                  ></img>
+                  <span>{[obj.kr]}</span>
+                </div>
             </Link>
           );
         })}
-    </>
+    </section>
   );
 };
 

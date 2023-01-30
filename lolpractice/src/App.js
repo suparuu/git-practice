@@ -25,7 +25,6 @@ function App(props) {
   
 
   function lolMain(test) {
-    console.log(test.data);
     const champ = test.data;
     // updata(champ);
 
@@ -57,7 +56,6 @@ function App(props) {
     }
     
 
-     console.log(ChampName, "챔프 영문이름");
 
     setTest(ChampName);
   }
@@ -82,7 +80,6 @@ function App(props) {
       </header>
 
       <main>
-        <section>
         <Routes>
           <Route
             path="/Ex"
@@ -100,7 +97,7 @@ function App(props) {
           <Route path="/Support" element={<Support value={test} />}></Route>
           <Route path="/Fighter" element={<Fighter value={test} />}></Route>
         </Routes>
-        </section>
+
       </main>
     </BrowserRouter>
   );

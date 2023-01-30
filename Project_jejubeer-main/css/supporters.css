@@ -1,5 +1,15 @@
 @import url("./common.css");
 @import url("./font.css");
+@-webkit-keyframes ani01 {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 @keyframes ani01 {
   0% {
     transform: translateY(150px);
@@ -61,7 +71,8 @@
   width: 40%;
 }
 * .main02 .container02 .flexbox01 .imgbox01.on {
-  animation: ani01 1.5s;
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
 }
 * .main02 .container02 .flexbox01 .imgbox01 div {
   width: 458px;
@@ -87,7 +98,8 @@
   align-items: center;
 }
 * .main03 .container03.on {
-  animation: ani01 1.5s;
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
 }
 * .main03 .container03 p:nth-of-type(1) {
   width: 50%;
@@ -120,7 +132,8 @@
   margin-top: 80px;
 }
 * .main04 .flexbox03.on {
-  animation: ani01 1.5s;
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
 }
 * .main04 .flexbox03 p {
   width: 50%;
@@ -158,7 +171,8 @@
   padding: 80px 0;
 }
 * .main04 .flexbox04.on {
-  animation: ani01 1.5s;
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
 }
 * .main04 .flexbox04 p {
   width: 50%;
@@ -201,7 +215,8 @@
   padding: 80px 0;
 }
 * .main05 .flexbox05.on {
-  animation: ani01 1.5s;
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
 }
 * .main05 .flexbox05 .flexbox06 {
   display: flex;
@@ -238,7 +253,8 @@
   padding-bottom: 80px;
 }
 * .main05 .flexbox08.on {
-  animation: ani01 1.5s;
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
 }
 * .main05 .flexbox08 .textbox07 {
   line-height: 2;
@@ -317,7 +333,8 @@
   margin: 0 auto;
 }
 * .main07 .flexbox07.on {
-  animation: ani01 1.5s;
+  -webkit-animation: ani01 1.5s;
+          animation: ani01 1.5s;
 }
 * .main07 .flexbox07 .textbox09 {
   width: 50%;
