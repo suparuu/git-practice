@@ -50,14 +50,16 @@ function App(props) {
       "http://ddragon.leagueoflegends.com/cdn/13.1.1/img/champion/";
     // console.log(Object.keys(champ), "obj"); //챔피언 이름
 
-    const ChampName = [];
+    /* const ChampName = [];
     for (let name in champ) {
       ChampName.push({ en: name, kr: champ[name].name });
     }
-    
-
-
-    setTest(ChampName);
+    console.log(ChampName)
+    ChampName.sort(function(a, b) { // 오름차순
+    return a.kr < b.kr ? -1 : a.kr > b.kr ? 1 : 0;
+  });
+  console.log(ChampName,'dddadsada')
+    setTest(ChampName); */
   }
 
   //console.log(test);
