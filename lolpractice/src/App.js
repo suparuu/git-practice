@@ -1,5 +1,5 @@
 import "./css/App.scss";
-import { useReducer, createContext, useState, useRef, useEffect } from "react";
+import {  useState } from "react";
 import Champ from "./component/Champ";
 import Main from "./component/Main";
 import Assassin from "./component/Assassin";
@@ -12,60 +12,7 @@ import Ex from "./component/Ex";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App(props) {
-  useEffect(() => {
-    fetch(
-      "http://ddragon.leagueoflegends.com/cdn/13.1.1/data/ko_KR/champion.json"
-    )
-      .then((Response) => Response.json())
-      .then((Response) => lolMain(Response))
-      .catch((err) => console.error(err));
-  }, []);
-
   const [test, setTest] = useState([]);  
-  
-
-  function lolMain(test) {
-    const champ = test.data;
-    // updata(champ);
-
-    //
-
-    /* for (let te in champ) {
-      fetch(
-        `http://ddragon.leagueoflegends.com/cdn/13.1.1/data/ko_KR/champion/${te}.json`
-      )
-        .then((Response) => Response.json())
-        .then((Response) => Champion(Response))
-        .catch((err) => console.error(err));
-
-      function Champion(ChampData) {
-        console.log(ChampData.data);
-        //console.log(ChampData)
-      } 
-    } */
-    /*  champ.map((obj, key) => { */
-
-    /* }); */
-    const ChampUrl =
-      "http://ddragon.leagueoflegends.com/cdn/13.1.1/img/champion/";
-    // console.log(Object.keys(champ), "obj"); //챔피언 이름
-
-    /* const ChampName = [];
-    for (let name in champ) {
-      ChampName.push({ en: name, kr: champ[name].name });
-    }
-    console.log(ChampName)
-    ChampName.sort(function(a, b) { // 오름차순
-    return a.kr < b.kr ? -1 : a.kr > b.kr ? 1 : 0;
-  });
-  console.log(ChampName,'dddadsada')
-    setTest(ChampName); */
-  }
-
-  //console.log(test);
-  const [a, setA] = useState("aaa");
-  function lol(data) {}
-
   return (
     <BrowserRouter>
       <header>
